@@ -35,7 +35,7 @@ enableDetection = True
 
 
 
-######################## Definitions fonctions principales ########################
+######################## Main functions definitions ########################
 def RunDetection(frame):
     global frameHeight, frameWidth
     frameWidth = frame.shape[1]
@@ -88,7 +88,7 @@ def PostProcess():
 
 
 
-#################################################### Debut programme ####################################################
+#################################################### Program ####################################################
 
     
 #########  Init and Open camera video stream #########
