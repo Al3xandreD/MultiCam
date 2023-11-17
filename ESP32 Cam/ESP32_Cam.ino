@@ -2,15 +2,16 @@
 #include <WiFi.h>
 #include <esp32cam.h>
  
-const char* WIFI_SSID = "Malelephone";
-const char* WIFI_PASS = "INI5siq77";
+const char* WIFI_SSID = "HUAWEI nova 3i";
+const char* WIFI_PASS = "12345678";
  
 WebServer server(80);
+
 
 /*
 FRAMESIZE_UXGA (1600 x 1200) 
 FRAMESIZE_QVGA (320 x 240) 
-FRAMESIZE_CIF (352 x 288) 
+FRAMESIZE_CIF (352 x 288)  
 FRAMESIZE_VGA (640 x 480) 
 FRAMESIZE_SVGA (800 x 600) 
 FRAMESIZE_XGA (1024 x 768) 
@@ -89,6 +90,7 @@ void  setup(){
   Serial.println("Wifi Connected ! ");
   Serial.print("http://");
   Serial.println(WiFi.localIP());
+
   Serial.println("  /cam-lo.jpg");
   Serial.println("  /cam-hi.jpg");
   Serial.println("  /cam-mid.jpg");
@@ -104,7 +106,6 @@ void loop()
 {
   server.handleClient();
 }
-
 
 
 
