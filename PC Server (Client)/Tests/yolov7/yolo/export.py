@@ -9,8 +9,8 @@ import torch
 import torch.nn as nn
 from torch.utils.mobile_optimizer import optimize_for_mobile
 
-import models
-from models.experimental import attempt_load, End2End
+from yolov7 import models
+from yolov7.models.experimental import attempt_load, End2End
 from yolov7.utils.activations import Hardswish, SiLU
 from yolov7.utils.general import set_logging, check_img_size
 from yolov7.utils.torch_utils import select_device
