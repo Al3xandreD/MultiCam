@@ -20,5 +20,12 @@ def compute_fundamental(x1, x2):
     U,S,V=np.linalg.svd(A)
     F=V[-1].reshape(3,3)
 
+    return F
+def compute_epipole(F):
+    """
+    :param F: fundamental matrix
+    """
 
-
+    U,S,V=np.linalg.svd(F)
+    e=V[-1]
+    return e/e[2]
