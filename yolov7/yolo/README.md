@@ -8,7 +8,7 @@ Implementation of paper - [YOLOv7: Trainable bag-of-freebies sets new state-of-t
 [![arxiv.org](http://img.shields.io/badge/cs.CV-arXiv%3A2207.02696-B31B1B.svg)](https://arxiv.org/abs/2207.02696)
 
 <div align="center">
-    <a href="./">
+    <a href="">
         <img src="./figure/performance.png" width="79%"/>
     </a>
 </div>
@@ -141,7 +141,7 @@ python detect.py --weights yolov7.pt --conf 0.25 --img-size 640 --source inferen
 ```
 
 <div align="center">
-    <a href="./">
+    <a href="">
         <img src="./figure/horses_prediction.jpg" width="59%"/>
     </a>
 </div>
@@ -190,7 +190,7 @@ Tested with: Python 3.7.13, Pytorch 1.12.0+cu113
 See [keypoint.ipynb](https://github.com/WongKinYiu/yolov7/blob/main/tools/keypoint.ipynb).
 
 <div align="center">
-    <a href="./">
+    <a href="">
         <img src="./figure/pose.png" width="39%"/>
     </a>
 </div>
@@ -203,7 +203,7 @@ See [keypoint.ipynb](https://github.com/WongKinYiu/yolov7/blob/main/tools/keypoi
 See [instance.ipynb](https://github.com/WongKinYiu/yolov7/blob/main/tools/instance.ipynb).
 
 <div align="center">
-    <a href="./">
+    <a href="">
         <img src="./figure/mask.png" width="59%"/>
     </a>
 </div>
@@ -255,16 +255,16 @@ YOLOv7 with decoupled TAL head (YOLOR + YOLOv5 + YOLOv6)
 YOLOv7-semantic & YOLOv7-panoptic & YOLOv7-caption
 
 <div align="center">
-    <a href="./">
+    <a href="">
         <img src="./figure/tennis.jpg" width="24%"/>
     </a>
-    <a href="./">
+    <a href="">
         <img src="./figure/tennis_semantic.jpg" width="24%"/>
     </a>
-    <a href="./">
+    <a href="">
         <img src="./figure/tennis_panoptic.png" width="24%"/>
     </a>
-    <a href="./">
+    <a href="">
         <img src="./figure/tennis_caption.png" width="24%"/>
     </a>
 </div>
@@ -272,7 +272,7 @@ YOLOv7-semantic & YOLOv7-panoptic & YOLOv7-caption
 YOLOv7-semantic & YOLOv7-detection & YOLOv7-depth (with NTUT)
 
 <div align="center">
-    <a href="./">
+    <a href="">
         <img src="./figure/yolov7_city.jpg" width="80%"/>
     </a>
 </div>
@@ -280,13 +280,13 @@ YOLOv7-semantic & YOLOv7-detection & YOLOv7-depth (with NTUT)
 YOLOv7-3d-detection & YOLOv7-lidar & YOLOv7-road (with NTUT)
 
 <div align="center">
-    <a href="./">
+    <a href="">
         <img src="./figure/yolov7_3d.jpg" width="30%"/>
     </a>
-    <a href="./">
+    <a href="">
         <img src="./figure/yolov7_lidar.jpg" width="30%"/>
     </a>
-    <a href="./">
+    <a href="">
         <img src="./figure/yolov7_road.jpg" width="30%"/>
     </a>
 </div>
