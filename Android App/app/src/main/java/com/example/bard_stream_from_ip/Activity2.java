@@ -1,5 +1,6 @@
 package com.example.bard_stream_from_ip;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -17,5 +18,17 @@ public class Activity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
+
+        ip = (EditText)findViewById(R.id.edit_ip_address);
+        enter_ip = (Button) findViewById(R.id.button_ip);
+
+        enter_ip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ip_address =ip.getText().toString();
+                Intent intent = new Intent(Activity2.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
