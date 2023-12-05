@@ -92,7 +92,7 @@ def PostProcess():
 
     
 #########  Init and Open camera video stream #########
-url = "http://192.168.43.190/cam-hi.jpg" #cam-lo  #cam-mid #cam-hi
+url = "http://192.168.43.137/cam-lo.jpg" #cam-lo  #cam-mid #cam-hi
 cv2.namedWindow("Live Cam Testing", cv2.WINDOW_AUTOSIZE)
 
 # Create a VideoCapture object

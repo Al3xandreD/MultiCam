@@ -11,6 +11,7 @@ from itertools import repeat
 from multiprocessing.pool import ThreadPool
 from pathlib import Path
 from threading import Thread
+import urllib.request
 
 import cv2
 import numpy as np
@@ -289,7 +290,7 @@ class LoadStreams:  # multiple IP or RTSP cameras
             self.fps = cap.get(cv2.CAP_PROP_FPS) % 100
 
             _, self.imgs[i] = cap.read()  # guarantee first frame
-            thread = Thread(target=self.update, args=([i, cap]), daemon=True)
+            thread = Thread(target=self.update, args=([i, cap, url]), daemon=True)
             print(f' success ({w}x{h} at {self.fps:.2f} FPS).')
             thread.start()
         print('')  # newline
@@ -300,7 +301,7 @@ class LoadStreams:  # multiple IP or RTSP cameras
         if not self.rect:
             print('WARNING: Different stream shapes detected. For optimal performance supply similarly-shaped streams.')
 
-    def update(self, index, cap):
+    def update(self, index, cap, url):
         # Read next stream frame in a daemon thread
         n = 0
         while cap.isOpened():
@@ -308,8 +309,14 @@ class LoadStreams:  # multiple IP or RTSP cameras
             # _, self.imgs[index] = cap.read()
             cap.grab()
             if n == 4:  # read every 4th frame
-                success, im = cap.retrieve()
-                self.imgs[index] = im if success else self.imgs[index] * 0
+                
+                img_resp = urllib.request.urlopen(url)
+                imgnp = np.array(bytearray(img_resp.read()), dtype=np.uint8)
+                im = cv2.imdecode(imgnp, -1)
+
+                #success, im = cap.read()
+                #success, im = cap.retrieve()
+                self.imgs[index] = im if True else self.imgs[index] * 0
                 n = 0
             time.sleep(1 / self.fps)  # wait time
 
