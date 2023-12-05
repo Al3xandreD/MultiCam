@@ -1,7 +1,7 @@
 #include <WiFi.h>
 
 
-const int WIFI_CHOICE = 1;
+const int WIFI_CHOICE = 0;
 const char* WIFI_SSID[] = {"HUAWEI nova 3i", "Redmi Note 8 Pro"};
 const char* WIFI_PASS[] = {"12345678","12abc345"};
 const char* ssid = WIFI_SSID[WIFI_CHOICE];
