@@ -2,8 +2,9 @@
 #include <WiFi.h>
 #include <esp32cam.h>
  
-const char* WIFI_SSID = "SSID";
-const char* WIFI_PASS = "WIFI_PASS";
+const int WIFI_CHOICE = 0;
+const char* WIFI_SSID[] = {"HUAWEI nova 3i", "SSID"};
+const char* WIFI_PASS[] = {"12345678","WIFI_PASS"};
  
 WebServer server(80);
 
