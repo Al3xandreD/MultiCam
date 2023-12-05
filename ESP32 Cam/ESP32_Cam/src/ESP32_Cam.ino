@@ -82,7 +82,7 @@ void  setup(){
 
   WiFi.persistent(false);
   WiFi.mode(WIFI_STA);
-  WiFi.begin(WIFI_SSID, WIFI_PASS);
+  WiFi.begin(WIFI_SSID[WIFI_CHOICE], WIFI_PASS[WIFI_CHOICE]);
   
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
