@@ -5,8 +5,8 @@
 int L_WEIGHT_BUTTON_PIN = 14;
 int H_WEIGHT_BUTTON_PIN = 2;
 int wifi_choice = 0;
-const char* WIFI_SSID[] = {"HUAWEI nova 3i", "Redmi Note 8 Pro", "Galaxy S21 Ultra 5G3443", "HUAWEI nova 3i"};
-const char* WIFI_PASS[] = {"12345678","12abc345", "", "12345678"};
+const char* WIFI_SSID[] = {"dlinkMALEK 2", "HUAWEI nova 3i", "Redmi Note 8 Pro", "Galaxy S21 Ultra 5G3443"};
+const char* WIFI_PASS[] = {"felmw98786", "12345678","12345678", ""};
 
 WebServer server(80);
 
