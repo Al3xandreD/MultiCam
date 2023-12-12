@@ -31,7 +31,7 @@ inHeight = args.height
 
 
 global img
-enableDetection = True
+enableDetection = 0
 
 
 
@@ -92,7 +92,7 @@ def PostProcess():
 
     
 #########  Init and Open camera video stream #########
-url = "http://192.168.43.137/cam-lo.jpg" #cam-lo  #cam-mid #cam-hi
+url = "http://192.168.43.196/cam-lo.jpg" #cam-lo  #cam-mid #cam-hi
 cv2.namedWindow("Live Cam Testing", cv2.WINDOW_AUTOSIZE)
 
 # Create a VideoCapture object
@@ -108,7 +108,8 @@ if not cap.isOpened():
 
 
 ########## Detection Init #############     
-net = cv2.dnn.readNetFromTensorflow("graph_opt.pb")
+if(enableDetection):
+    net = cv2.dnn.readNetFromTensorflow("graph_opt.pb")
 #######################################
 
 

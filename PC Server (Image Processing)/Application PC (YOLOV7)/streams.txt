@@ -1,2 +1,1 @@
-http://192.168.43.137/cam-lo.jpg
-http://192.168.43.20/cam-lo.jpg
+http://192.168.43.196/cam-lo.jpg

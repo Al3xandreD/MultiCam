@@ -2,9 +2,11 @@
 #include <WiFi.h>
 #include <esp32cam.h>
  
-const int WIFI_CHOICE = 0;
-const char* WIFI_SSID[] = {"HUAWEI nova 3i", "Redmi Note 8 Pro", "Galaxy S21 Ultra 5G3443"};
-const char* WIFI_PASS[] = {"12345678","12abc345", ""};
+int L_WEIGHT_BUTTON_PIN = 14;
+int H_WEIGHT_BUTTON_PIN = 2;
+int wifi_choice = 0;
+const char* WIFI_SSID[] = {"HUAWEI nova 3i", "Redmi Note 8 Pro", "Galaxy S21 Ultra 5G3443", "HUAWEI nova 3i"};
+const char* WIFI_PASS[] = {"12345678","12abc345", "", "12345678"};
 
 WebServer server(80);
 
@@ -82,8 +84,14 @@ void  setup(){
 
   WiFi.persistent(false);
   WiFi.mode(WIFI_STA);
-  WiFi.begin(WIFI_SSID[WIFI_CHOICE], WIFI_PASS[WIFI_CHOICE]);
-  
+  pinMode(L_WEIGHT_BUTTON_PIN, INPUT_PULLUP);
+  pinMode(H_WEIGHT_BUTTON_PIN, INPUT_PULLUP);
+
+  wifi_choice = digitalRead(L_WEIGHT_BUTTON_PIN) + 2*digitalRead(H_WEIGHT_BUTTON_PIN);
+  WiFi.begin(WIFI_SSID[wifi_choice], WIFI_PASS[wifi_choice]);
+  Serial.println("Trying to connect to Wifi " + String(wifi_choice + 1) + " :");
+  Serial.print(WIFI_SSID[wifi_choice]);
+
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
     Serial.print(".");
