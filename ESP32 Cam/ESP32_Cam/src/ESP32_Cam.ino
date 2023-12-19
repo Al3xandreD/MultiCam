@@ -5,8 +5,8 @@
 int L_WEIGHT_BUTTON_PIN = 14;
 int H_WEIGHT_BUTTON_PIN = 2;
 int wifi_choice = 0;
-const char* WIFI_SSID[] = {"dlinkMALEK", "HUAWEI nova 3i", "Redmi Note 8 Pro", "Galaxy S21 Ultra 5G3443"};
-const char* WIFI_PASS[] = {"felmw98786", "12345678","12345678", ""};
+const char* WIFI_SSID[] = {"iot", "dlinkMALEK", "HUAWEI nova 3i", "Redmi Note 8 Pro"};
+const char* WIFI_PASS[] = {"enstaL@b", "felmw98786", "12345678","12345678"};
 
 WebServer server(80);
 
@@ -87,7 +87,7 @@ void  setup(){
   pinMode(L_WEIGHT_BUTTON_PIN, INPUT_PULLUP);
   pinMode(H_WEIGHT_BUTTON_PIN, INPUT_PULLUP);
 
-  wifi_choice = digitalRead(L_WEIGHT_BUTTON_PIN) + 2*digitalRead(H_WEIGHT_BUTTON_PIN);
+  wifi_choice = !digitalRead(L_WEIGHT_BUTTON_PIN) + 2*!digitalRead(H_WEIGHT_BUTTON_PIN);
   WiFi.begin(WIFI_SSID[wifi_choice], WIFI_PASS[wifi_choice]);
   Serial.println("Trying to connect to Wifi " + String(wifi_choice + 1) + " :");
   Serial.print(WIFI_SSID[wifi_choice]);

@@ -1,3 +1,0 @@
-http://192.168.78.144/cam-lo.jpg
-http://192.168.78.190/cam-lo.jpg
-http://192.168.78.196/cam-lo.jpg
