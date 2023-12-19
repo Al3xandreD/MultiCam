@@ -261,7 +261,10 @@ class LoadWebcam:  # for inference
 
 
 class LoadStreams:  # multiple IP or RTSP cameras
-    def __init__(self, sources='streams.txt', img_size=640, stride=32):
+
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    full_path = dir_path + '\streams.txt'
+    def __init__(self, sources=full_path, img_size=640, stride=32):
         self.mode = 'stream'
         self.img_size = img_size
         self.stride = stride
