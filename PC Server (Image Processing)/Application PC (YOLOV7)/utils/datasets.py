@@ -20,6 +20,15 @@ import torch.nn.functional as F
 from PIL import Image, ExifTags
 from torch.utils.data import Dataset
 from tqdm import tqdm
+import requests
+
+def url_ok(url, timeout):
+    try:
+        r = requests.head(url, timeout = timeout)
+        return r.status_code == 200
+    except:
+        return False
+    
 
 #from pycocotools import mask as maskUtils
 
@@ -273,7 +282,9 @@ class LoadStreams:  # multiple IP or RTSP cameras
             sources = [sources]
 
         n = len(sources)
-        self.imgs = [None] * n
+        #self.imgs = [None] * n
+        self.imgs = []
+        sucessindex = 0
         self.sources = [clean_str(x) for x in sources]  # clean source names for later
         for i, s in enumerate(sources):
             # Start the thread to read frames from the video stream
@@ -283,16 +294,21 @@ class LoadStreams:  # multiple IP or RTSP cameras
                 check_requirements(('pafy', 'youtube_dl'))
                 import pafy
                 url = pafy.new(url).getbest(preftype="mp4").url
-            cap = cv2.VideoCapture(url)
-            assert cap.isOpened(), f'Failed to open {s}'
-            w = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-            h = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-            self.fps = cap.get(cv2.CAP_PROP_FPS) % 100
+            if (url_ok(url,1)):
+                cap = cv2.VideoCapture(url)
+                assert cap.isOpened(), f'Failed to open {s}'
+                w = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+                h = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+                self.fps = cap.get(cv2.CAP_PROP_FPS) % 100
+                self.imgs.append(cap.read())
+                #_, self.imgs[i] = cap.read()  # guarantee first frame
+                thread = Thread(target=self.update, args=([sucessindex, cap, url]), daemon=True)
+                sucessindex += 1
+                print(f' success ({w}x{h} at {self.fps:.2f} FPS).')
+                thread.start()
+            else:
+                print(f'failed to open camera n°{i}')
 
-            _, self.imgs[i] = cap.read()  # guarantee first frame
-            thread = Thread(target=self.update, args=([i, cap, url]), daemon=True)
-            print(f' success ({w}x{h} at {self.fps:.2f} FPS).')
-            thread.start()
         print('')  # newline
 
         # check for common shapes
@@ -307,16 +323,31 @@ class LoadStreams:  # multiple IP or RTSP cameras
         while cap.isOpened():
             n += 1
             # _, self.imgs[index] = cap.read()
-            cap.grab()
+            #cap.grab()
             if n == 4:  # read every 4th frame
                 
-                img_resp = urllib.request.urlopen(url)
-                imgnp = np.array(bytearray(img_resp.read()), dtype=np.uint8)
-                im = cv2.imdecode(imgnp, -1)
+                success = False
+                #Meth 1 for getting image from url
+                # try:
+                #     img_resp = urllib.request.urlopen(url)
+                #     imgnp = np.array(bytearray(img_resp.read()), dtype=np.uint8)
+                #     im = cv2.imdecode(imgnp, -1)
+                #     success = True
 
-                #success, im = cap.read()
+                # except:
+                #     print(f'failed to open cam n°{index:d}')
+
+                #Meth 2 for getting image from url
+                try:
+                    if (url_ok(url,1)):
+                        cap = cv2.VideoCapture(url)
+                        success, im = cap.read()
+                except:
+                    print(f'failed to open cam n°{index:d}')
+
+
                 #success, im = cap.retrieve()
-                self.imgs[index] = im if True else self.imgs[index] * 0
+                self.imgs[index] = im if success else self.imgs[index] * 0
                 n = 0
             time.sleep(1 / self.fps)  # wait time
 

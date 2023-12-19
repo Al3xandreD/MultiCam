@@ -4,7 +4,7 @@ import numpy as np
 import time
 
 # Replace the URL with the IP camera's stream URL
-url = "http://192.168.43.190/cam-lo.jpg" #cam-lo  #cam-mid #cam-hi
+url = "http://172.19.147.182/cam-lo.jpg" #cam-lo  #cam-mid #cam-hi
 cv2.namedWindow("Live Cam Testing", cv2.WINDOW_AUTOSIZE)
 
 # Create a VideoCapture object
@@ -68,6 +68,7 @@ while True:
     # Read a frame from the video stream
     img_resp = urllib.request.urlopen(url)
     imgnp = np.array(bytearray(img_resp.read()), dtype=np.uint8)
+    cap = cv2.VideoCapture(url)
     # ret, frame = cap.read()
     img = cv2.imdecode(imgnp, -1)
 
@@ -75,7 +76,7 @@ while True:
     #### Debut detection et affichage resultats
 
     if(1):
-        #Agir sur le troisième argument (tuple) pour jouer sur la fluidité/precision (pgcd = 32)
+        #Agir sur le troisième argument (tuple) pour jouer sur la fluidité/precision (multiple de 32)
         blob = cv2.dnn.blobFromImage(img, 1/255.0, (288, 288), swapRB=True, crop=False)
 
         net.setInput(blob)

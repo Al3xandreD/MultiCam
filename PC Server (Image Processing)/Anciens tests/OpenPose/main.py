@@ -5,6 +5,14 @@ import urllib.request
 import numpy as np
 import time
 import argparse
+import socket
+from urllib.error import URLError, HTTPError
+
+import requests
+
+def url_ok(url, timeout = 1):
+    r = requests.head(url, timeout=timeout)
+    return r.status_code == 200
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--input', help='Path to image or video. Skip to capture frames from camera')
@@ -77,6 +85,27 @@ def PostProcess():
             cv2.ellipse(frame, points[idFrom], (3, 3), 0, 0, 360, (0, 0, 255), cv2.FILLED)
             cv2.ellipse(frame, points[idTo], (3, 3), 0, 0, 360, (0, 0, 255), cv2.FILLED)
 
+def check_url_availability(url, timeout=2):
+    try:
+        # Configurez une requête avec un timeout spécifié
+        request = urllib.request.Request(url)
+        response = urllib.request.urlopen(request, timeout=timeout)
+        
+        # Si la requête réussit, l'URL est disponible
+        print(f"L'URL {url} est disponible.")
+        return True
+    except HTTPError as e:
+        # Si le serveur retourne un code d'erreur HTTP
+        print(f"L'URL {url} a retourné un code d'erreur HTTP {e.code}.")
+        return False
+    except URLError as e:
+        # Si une exception d'URL se produit (par exemple, connexion refusée)
+        print(f"Une exception URLError s'est produite : {e.reason}.")
+        return False
+    except Exception as e:
+        # Gérer d'autres exceptions qui pourraient se produire
+        print(f"Une exception s'est produite : {e}.")
+        return False
 
 ########################################################################################################################
 
@@ -92,16 +121,16 @@ def PostProcess():
 
     
 #########  Init and Open camera video stream #########
-url = "http://192.168.43.196/cam-lo.jpg" #cam-lo  #cam-mid #cam-hi
+url = "http://172.19.147.182/cam-lo.jpg" #cam-lo  #cam-mid #cam-hi
 cv2.namedWindow("Live Cam Testing", cv2.WINDOW_AUTOSIZE)
 
 # Create a VideoCapture object
-cap = cv2.VideoCapture(url)                 
+# cap = cv2.VideoCapture(url)                 
 
 # Check if the IP camera stream is opened successfully
-if not cap.isOpened():
-    print("Failed to open the IP camera stream")
-    exit()
+# if not cap.isOpened():
+#     print("Failed to open the IP camera stream")
+#     exit()
 ###########################################################
 
 
@@ -114,20 +143,38 @@ if(enableDetection):
 
 
 
+#Init frame
+frame = np.array(np.eye(80), dtype=np.uint8)
 
 ########## Video and Detection #########
 while True:
 
-    ### Read a frame from the video stream ###
-    img_resp = urllib.request.urlopen(url)
-    imgnp = np.array(bytearray(img_resp.read()), dtype=np.uint8)
-    img = cv2.imdecode(imgnp, -1)
-    img = cv2.transpose(img)
 
-    #hasFrame, frame = cap.read()
-    frame = img
+    
+
+    ### Read a frame from the video stream ###
+    #Meth:1
+    # try:
+    #     if (url_ok(url)):
+    #         img_resp = urllib.request.urlopen(url)
+    #         imgnp = np.array(bytearray(img_resp.read()), dtype=np.uint8)
+    #         img = cv2.imdecode(imgnp, -1)
+    #         img = cv2.transpose(img)
+    #         frame = img
+    #         hasFrame = True
+    # except Exception as e:        
+    #     print(e)
+
+    #Meth:2
+    try:
+        if (url_ok(url, 1)):
+            cap = cv2.VideoCapture(url)                 
+            hasFrame, frame = cap.read()
+    except Exception as e:        
+        print(e)
+
     ### Try detection and process frame with results ###
-    if(enableDetection):
+    if(enableDetection and hasFrame):
         if (RunDetection(frame)):
             PostProcess()
         
