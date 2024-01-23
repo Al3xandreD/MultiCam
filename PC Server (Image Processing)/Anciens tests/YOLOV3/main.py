@@ -4,7 +4,7 @@ import numpy as np
 import time
 
 # Replace the URL with the IP camera's stream URL
-url = "http://172.19.147.182/cam-lo.jpg" #cam-lo  #cam-mid #cam-hi
+url = "http://192.168.43.105/cam-lo.jpg" #cam-lo  #cam-mid #cam-hi
 cv2.namedWindow("Live Cam Testing", cv2.WINDOW_AUTOSIZE)
 
 # Create a VideoCapture object
@@ -17,7 +17,7 @@ if not cap.isOpened():
 
 
 # Load names of classes and get random colors
-classes = open('coco.names').read().strip().split('\n')
+classes = open("C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam[Git]\PC Server (Image Processing)\Anciens tests\YOLOV3\coco.names")
 np.random.seed(42)
 colors = np.random.randint(0, 255, size=(len(classes), 3), dtype='uint8')
 

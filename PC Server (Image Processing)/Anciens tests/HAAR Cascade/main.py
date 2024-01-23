@@ -4,9 +4,9 @@ import cv2
 import urllib.request
 import numpy as np
 import time
-
+ 
 global img
-enableDetection = True
+enableDetection = False
 
 def RunDetection(img):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -22,7 +22,7 @@ def PostProcess():
 
 
 #########  Init and Open camera video stream #########
-url = "http://192.168.43.190/cam-hi.jpg" #cam-lo  #cam-mid #cam-hi
+url = "http://192.168.43.105/cam-lo.jpg" #cam-lo  #cam-mid #cam-hi
 cv2.namedWindow("Live Cam Testing", cv2.WINDOW_AUTOSIZE)
 
 # Create a VideoCapture object

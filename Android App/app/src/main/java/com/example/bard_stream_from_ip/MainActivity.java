@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView imageView;
     long frameDelay = 1000/FRAME_RATE;
     // Set the video URL
-    String[] videoUrl = {"http://192.168.43.190/cam-lo.jpg"};
+    String[] videoUrl = {"http://172.19.147.185/cam-lo.jpg"};
 
     HttpURLConnection connection;
 
