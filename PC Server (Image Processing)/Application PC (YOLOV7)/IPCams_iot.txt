@@ -1,5 +1,0 @@
-http://172.19.147.180/cam-lo.jpg
-http://172.19.147.182/cam-lo.jpg
-http://172.19.147.185/cam-lo.jpg
-http://172.19.147.186/cam-lo.jpg
- 

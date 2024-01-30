@@ -7,7 +7,7 @@
 #define PWMChannel 7 // Use PWM channel 7
 #define LEDC_TIMER_BIT_RES  12 // Use 12 bit precision for LEDC timer
 #define LEDC_BASE_FREQ     5000 // Use 5000 Hz as a LEDC base frequency
-#define LED_INTENSITY 2 // Set duty cycle --> Set led Intensity!230.
+#define LED_INTENSITY 2 // Set duty cycle --> Set led Intensity 230.
 
 //WIFI choice buttons (2 buttons --> 4 combinaisons --> 4 Wifi choices)
 #define L_WEIGHT_BUTTON_PIN  14
