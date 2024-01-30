@@ -9,8 +9,11 @@ import time
 import openpyxl
 import requests
 
+common_resources_dir = "\Common Resources"
+root_folder_content_signature = common_resources_dir  # To find root folder automatically
+
 # EXCEL IP CAMS DATABASE
-IPCAMS_DATABASE = 'All_IPCams.xlsx'
+IPCAMS_DATABASE = common_resources_dir + '\All_IPCams.xlsx'
 BAT_ID = 1
 BAT_NAMES = ['IOT', 'Rayane', 'Tamara']
 IPCAMS_DATABASE_STARTROW = 3
@@ -19,22 +22,29 @@ IPCAMS_DATABASE_STARTCOL = 6
 # CAMS
 W_DEFAULT, H_DEFAULT = 640, 480
 h, w = W_DEFAULT, H_DEFAULT
-are_frontal = True
+are_frontals = True
 
-# Get root project directory
+################## Get root project directory ##################
 i = 0
-path = dirname(abspath(__file__))
-root_folder_content_signature = "\.git"
-while not os.path.exists(path + root_folder_content_signature):
-    path = dirname(abspath(path))
+root_project_dir = dirname(abspath(__file__))
+while not os.path.exists(root_project_dir + root_folder_content_signature):
+    root_project_dir = dirname(abspath(root_project_dir))
+    print(root_project_dir)
     i += 1
-    assert i < 100, f'Root project directory not found. Please ensure that there is a {root_folder_content_signature} folder inside it'
+    assert i < 100, f'Root project directory not found. Please ensure that there is a "\{root_folder_content_signature}" folder inside it'
 
-print(path)
+root_project_dir += "\""
+print(f'Root project directory found : \n {root_project_dir}')
+#################################################################
+
+
+
 
 #########  Init cameras video stream #########
 # Get Cams Urls
-wb = openpyxl.load_workbook(IPCAMS_DATABASE, data_only=True)
+IPCAMS_DATABASE_PATH = root_project_dir + IPCAMS_DATABASE
+IPCAMS_DATABASE_PATH = IPCAMS_DATABASE_PATH.replace("\"", "\\")  # Convert to double backslashes if needed
+wb = openpyxl.load_workbook(IPCAMS_DATABASE_PATH, data_only=True)
 ws = wb[BAT_NAMES[BAT_ID]]
 urls = [ws.cell(row=i + IPCAMS_DATABASE_STARTROW, column=IPCAMS_DATABASE_STARTCOL).value for i in
         range(1, ws.max_row + 1) if
@@ -72,7 +82,7 @@ def update(index, url):
                 img_cv = cv2.imdecode(img_numpy, -1)
                 # Orientation correction
                 img_cv = cv2.transpose(img_cv)
-                if not are_frontal:
+                if not are_frontals:
                     img_cv = cv2.flip(img_cv, 1)
 
                 success = True
