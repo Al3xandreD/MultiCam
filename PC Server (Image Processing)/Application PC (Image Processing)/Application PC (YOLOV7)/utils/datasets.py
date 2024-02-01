@@ -272,6 +272,8 @@ class LoadWebcam:  # for inference
 
 
 class LoadStreams:  # multiple IP or RTSP cameras
+    W_DEFAULT, H_DEFAULT = 640, 480
+    w, h = W_DEFAULT, H_DEFAULT
 
     def __init__(self, sources='\streams.txt', img_size=640, stride=32):
         self.mode = 'stream'
@@ -289,7 +291,7 @@ class LoadStreams:  # multiple IP or RTSP cameras
 
         n = len(sources)
         self.imgs = [None] * n
-        #self.imgs = []
+        # self.imgs = []
         sucessindex = 0
         self.sources = [clean_str(x) for x in sources]  # clean source names for later
         for i, s in enumerate(sources):
@@ -303,19 +305,19 @@ class LoadStreams:  # multiple IP or RTSP cameras
             if (url_ok(url, 1)):
                 cap = cv2.VideoCapture(url)
                 print(np.shape(cap.read()[1]))
-            #assert cap.isOpened(), f'Failed to open {s}'
-            w = 320#int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-            h = 240# int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-            self.fps = 25#cap.get(cv2.CAP_PROP_FPS) % 100
+            # assert cap.isOpened(), f'Failed to open {s}'
+            w = 320  # int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+            h = 240  # int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+            self.fps = 25  # cap.get(cv2.CAP_PROP_FPS) % 100
             self.imgs[i] = np.zeros((h, w, 3))  # guarantee first frame
-            #self.imgs.append(cap.read()[1])
+            # self.imgs.append(cap.read()[1])
             # _, self.imgs[i] = cap.read()  # guarantee first frame
             thread = Thread(target=self.update, args=([i, url]), daemon=True)
             sucessindex += 1
             print(f' success ({w}x{h} at {self.fps:.2f} FPS).')
             thread.start()
-            #else:
-                # print(f'failed to open camera n°{i}')
+            # else:
+            # print(f'failed to open camera n°{i}')
 
         print('')  # newline
 
@@ -328,36 +330,45 @@ class LoadStreams:  # multiple IP or RTSP cameras
     def update(self, index, url):
         # Read next stream frame in a daemon thread
         n = 0
-        cap = cv2.VideoCapture(url)
+        # cap = cv2.VideoCapture(url)
+        img_cv = None
+        w = 320  # int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+        h = 240  # int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
         while True:
             n += 1
             # _, self.imgs[index] = cap.read()
             # cap.grab()
             if n == 4:  # read every 4th frame
-
                 success = False
                 # Meth 1 for getting image from url
-                # try:
-                #     img_resp = urllib.request.urlopen(url)
-                #     imgnp = np.array(bytearray(img_resp.read()), dtype=np.uint8)
-                #     im = cv2.imdecode(imgnp, -1)
-                #     success = True
-
-                # except:
-                #     print(f'failed to open cam n°{index:d}')
-
-                # Meth 2 for getting image from url
                 try:
                     if (url_ok(url, 1)):
-                        cap = cv2.VideoCapture(url)
-                        success, im = cap.read()
-                        print(index)
-                        print(success)
+                        img_rawInput = urllib.request.urlopen(url)
+                        img_numpy = np.array(bytearray(img_rawInput.read()), dtype=np.uint8)
+                        img_cv = cv2.imdecode(img_numpy, -1)
+                        # Orientation correction
+                        img_cv = cv2.transpose(img_cv)
+                        if not False:  # is_frontal ?
+                            img_cv = cv2.flip(img_cv, 1)
+                        success = True
                 except:
                     print(f'failed to open cam n°{index:d}')
 
+                # Meth 2 for getting image from url
+                # try:
+                #     if (url_ok(url, 1)):
+                #         cap = cv2.VideoCapture(url)
+                #         success, im = cap.read()
+                # except:
+                #     print(f'failed to open cam no : {index:d}')
+
+                if img_cv is None:
+                    img_cv = np.zeros((h, w, 3))
+                else:
+                    h, w = img_cv.shape[0], img_cv.shape[1]
+
                 # success, im = cap.retrieve()
-                self.imgs[index] = im if success else self.imgs[index] * 0
+                self.imgs[index] = img_cv if success else self.imgs[index] * 0
                 n = 0
             time.sleep(1 / self.fps)  # wait time
 

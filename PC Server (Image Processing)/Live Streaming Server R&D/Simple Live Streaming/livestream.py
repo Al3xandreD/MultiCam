@@ -15,7 +15,6 @@ root_folder_content_signature = common_resources_dir  # To find root folder auto
 # EXCEL IP CAMS DATABASE
 IPCAMS_DATABASE = common_resources_dir + '\All_IPCams.xlsx'
 BAT_ID = 1
-BAT_NAMES = ['IOT', 'Rayane', 'Tamara']
 IPCAMS_DATABASE_STARTROW = 3
 IPCAMS_DATABASE_STARTCOL = 6
 
@@ -45,7 +44,8 @@ print(f'Root project directory found : \n {root_project_dir}')
 IPCAMS_DATABASE_PATH = root_project_dir + IPCAMS_DATABASE
 IPCAMS_DATABASE_PATH = IPCAMS_DATABASE_PATH.replace("\"", "\\")  # Convert to double backslashes if needed
 wb = openpyxl.load_workbook(IPCAMS_DATABASE_PATH, data_only=True)
-ws = wb[BAT_NAMES[BAT_ID]]
+bat_names = wb.sheetnames
+ws = wb[bat_names[BAT_ID]]
 urls = [ws.cell(row=i + IPCAMS_DATABASE_STARTROW, column=IPCAMS_DATABASE_STARTCOL).value for i in
         range(1, ws.max_row + 1) if
         ws.cell(row=i + IPCAMS_DATABASE_STARTROW, column=IPCAMS_DATABASE_STARTCOL).value is not None]
@@ -71,38 +71,42 @@ def url_ok(url, timeout):
 def update(index, url):
     # Read next stream frame in a daemon thread
     global w, h
+    f = 0
     img_cv = None
     while True:
+        f += 1
         success = False
-        # Meth 1 for getting image from url
-        try:
-            if (url_ok(url, 1)):
-                img_rawInput = urllib.request.urlopen(url)
-                img_numpy = np.array(bytearray(img_rawInput.read()), dtype=np.uint8)
-                img_cv = cv2.imdecode(img_numpy, -1)
-                # Orientation correction
-                img_cv = cv2.transpose(img_cv)
-                if not are_frontals:
-                    img_cv = cv2.flip(img_cv, 1)
+        if f == 1:
+            # Meth 1 for getting image from url
+            try:
+                if (url_ok(url, 1)):
+                    img_rawInput = urllib.request.urlopen(url)
+                    img_numpy = np.array(bytearray(img_rawInput.read()), dtype=np.uint8)
+                    img_cv = cv2.imdecode(img_numpy, -1)
+                    # Orientation correction
+                    img_cv = cv2.transpose(img_cv)
+                    if not are_frontals:
+                        img_cv = cv2.flip(img_cv, 1)
 
-                success = True
-        except:
-            print(f'failed to open cam n°{index:d}')
+                    success = True
+            except:
+                print(f'failed to open cam n°{index:d}')
 
-        # Meth 2 for getting image from url
-        # try:
-        #     if (url_ok(url, 1)):
-        #         cap = cv2.VideoCapture(url)
-        #         success, im = cap.read()
-        # except:
-        #     print(f'failed to open cam no : {index:d}')
+            # Meth 2 for getting image from url
+            # try:
+            #     if (url_ok(url, 1)):
+            #         cap = cv2.VideoCapture(url)
+            #         success, im = cap.read()
+            # except:
+            #     print(f'failed to open cam no : {index:d}')
 
-        if img_cv is None:
-            img_cv = np.zeros((h, w, 3))
-        else:
-            h, w = img_cv.shape[0], img_cv.shape[1]
-        imgs[index] = img_cv
-        #time.sleep(1 / 25)  # wait time
+            if img_cv is None:
+                img_cv = np.zeros((h, w, 3))
+            else:
+                h, w = img_cv.shape[0], img_cv.shape[1]
+            imgs[index] = img_cv
+            #time.sleep(1 / 25)  # wait time
+            f = 0
 
 
 ########## Prepare camera threads #########
@@ -114,7 +118,7 @@ for i, url in enumerate(urls):
 ########## Display live streams #########
 while True:
     for i, img_out in enumerate(imgs):
-        cv2.imshow(f'Live cam testing no : {i + 1:d}/{n:d} ({urls[i]})', img_out)
+        cv2.imshow(f'Live cam testing : {i + 1:d}/{n:d} ({urls[i]})', img_out)
     key = cv2.waitKey(1)
     if key == ord('q'):
         break
