@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e8978849-012d-4bd9-b320-79f702d5c7e9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.idea/MultiCam[Git].iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/MultiCam[Git].iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ESP32 Cam/ESP32_Cam/src/ESP32_Cam.ino" beforeDir="false" afterPath="$PROJECT_DIR$/../../ESP32 Cam/ESP32_Cam/src/ESP32_Cam.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Anciens tests/HAAR Cascade/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Anciens tests/HAAR Cascade/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application PC (YOLOV7)/$Run_ESP32-RGX.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../Application PC (YOLOV7)/$Run_ESP32-RGX.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application PC (YOLOV7)/All_IPCams.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../Application PC (YOLOV7)/All_IPCams.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application PC (YOLOV7)/IPCams_RGX.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Application PC (YOLOV7)/IPCams_RGX.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application PC (YOLOV7)/export.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Application PC (YOLOV7)/export.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application PC (YOLOV7)/utils/datasets.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Application PC (YOLOV7)/utils/datasets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Application PC (YOLOV7)/yolo/export.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Application PC (YOLOV7)/yolo/export.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2bg32lDo8wfdalKILbycHYldiWA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/rayou/Documents/ENSTA Bretagne/MultiCam/MultiCam[Git]/PC Server (Image Processing)/Application PC (YOLOV7)",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e8978849-012d-4bd9-b320-79f702d5c7e9" name="Changes" comment="" />
+      <created>1706622689556</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706622689556</updated>
+      <workItem from="1706622690582" duration="6160000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Simple_Live_Streaming_2$livecams.coverage" NAME="livecams Coverage Results" MODIFIED="1706631171852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
