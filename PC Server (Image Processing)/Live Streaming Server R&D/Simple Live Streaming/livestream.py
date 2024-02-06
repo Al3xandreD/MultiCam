@@ -39,7 +39,7 @@ print(f'Root project directory found : \n {root_project_dir}')
 
 
 
-#########  Init cameras video stream #########
+##############  Init cameras video stream ###############
 # Get Cams Urls
 IPCAMS_DATABASE_PATH = root_project_dir + IPCAMS_DATABASE
 IPCAMS_DATABASE_PATH = IPCAMS_DATABASE_PATH.replace("\"", "\\")  # Convert to double backslashes if needed
