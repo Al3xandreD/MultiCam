@@ -1,7 +1,7 @@
 # **La carte de développement ESP32 CAM**
 
 
-# **1. Introduction :**
+# **1. Introduction**
 
 ![esp32](./Images/ESP32CAM.jpg)
 
@@ -18,7 +18,7 @@ Le module caméra de petite taille très compétitif peut fonctionner indépenda
 L'ESP-32CAM peut être largement utilisé dans diverses applications IoT. Il convient aux appareils intelligents domestiques, au contrôle sans fil industriel, à la surveillance sans fil, à l'identification sans fil QR, aux signaux du système de positionnement sans fil et à d'autres applications IoT. C'est une solution idéale pour les applications IoT.
 </p>
 
-# **2. Caractéristiques:**
+# **2. Caractéristique**
 <ul>
 
 <li> Le plus petit module SoC Wi-Fi BT 802.11b/g/n</li>
@@ -44,7 +44,7 @@ L'ESP-32CAM peut être largement utilisé dans diverses applications IoT. Il con
 | ![Camera OV2640 avec ESP32CAM](./Images/OV2640_cam.jpg) | ![Camera OV2640 avec ESP32CAM 2](./Images/OV2640_cam(2).jpg)|
 
 
-# **3. Spécifications:**
+# **3. Spécifications**
 |   |   |
 |---|---|
 | Module model | ESP32-CAM|
@@ -67,7 +67,7 @@ L'ESP-32CAM peut être largement utilisé dans diverses applications IoT. Il con
 | Dissipation de puissance | Éteignage de la lampe flash : 180mA à 5V <br> Allumez la lampe flash et allumez la luminosité au maximum : 310 mA à 5 V |
 | Gamme d'alimentation | 5V |
 
-# **4. Brochage :**
+# **4. Brochage**
 
 |  Les broches de la carte |   |
 |---|---|
@@ -107,7 +107,8 @@ La figure ci-dessous représente d'autres types de composants, tel que le porte-
 
 ![esp32](./Images/AI-thinker-ESP32-components-core.jpg)
 
-# **Références :**
+# **Références**
+
 <a href = "https://loboris.eu/ESP32/ESP32-CAM%20Product%20Specification.pdf" > https://loboris.eu/ESP32/ESP32-CAM%20Product%20Specification.pdf </a>
 <a href = "https://media.digikey.com/pdf/Data%20Sheets/DFRobot%20PDFs/DFR0602_Web.pdf
 " > https://media.digikey.com/pdf/Data%20Sheets/DFRobot%20PDFs/DFR0602_Web.pdf
