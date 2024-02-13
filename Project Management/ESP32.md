@@ -18,7 +18,7 @@ Le module caméra de petite taille très compétitif peut fonctionner indépenda
 L'ESP-32CAM peut être largement utilisé dans diverses applications IoT. Il convient aux appareils intelligents domestiques, au contrôle sans fil industriel, à la surveillance sans fil, à l'identification sans fil QR, aux signaux du système de positionnement sans fil et à d'autres applications IoT. C'est une solution idéale pour les applications IoT.
 </p>
 
-# **2. Caractéristique**
+# **2. Caractéristiques**
 <ul>
 
 <li> Le plus petit module SoC Wi-Fi BT 802.11b/g/n</li>
