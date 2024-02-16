@@ -2,6 +2,7 @@
 
 
 # **1. Introduction**
+TODO : Include not safe pins : https://lastminuteengineers.com/esp32-cam-pinout-reference/
 
 ![esp32](./Images/ESP32CAM.jpg)
 
