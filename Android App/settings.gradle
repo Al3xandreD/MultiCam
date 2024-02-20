@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Bard_stream_from_IP"
+rootProject.name = "Final_App"
 include ':app'
