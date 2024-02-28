@@ -1,9 +1,0 @@
-- reconnaissance de la personne
-- reconnaissance des objets (sélection d'objet que l'on veut reconnaitre = table, chaise, ...)
-- placement des caméras pour optimiser la vue
-- localisation de la personne (postion GPS)
-- synchronisation des caméras
-- création du serveur
-- streaming des caméras vers le serveur
-- création de l'application Android recevant les informations du serveur (fonctionnalités)
-- informations transmisent à la personne (symbolique = instruction pré-défini ou IA) 
