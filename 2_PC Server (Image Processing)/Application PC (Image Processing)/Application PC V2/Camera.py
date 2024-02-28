@@ -7,6 +7,7 @@ from utils.urlconnection.urlconnect import *
 import numpy as np
 
 
+
 def gcd_resize(input_frame, gcd):
     frame_height, frame_width = input_frame.shape[0], input_frame.shape[1]
     if gcd != 1:
