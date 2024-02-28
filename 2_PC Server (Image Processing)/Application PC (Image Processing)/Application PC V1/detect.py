@@ -68,9 +68,6 @@ def poseEstimation_postProcess(dst, offset):
             cv2.ellipse(dst, points[idTo], (3, 3), 0, 0, 360, (0, 0, 255), cv2.FILLED)
 
 
-
-
-
 def detect(save_img=False):
     source, weights, view_img, save_txt, imgsz, trace = opt.source, opt.weights, opt.view_img, opt.save_txt, opt.img_size, not opt.no_trace
     save_img = not opt.nosave and not source.endswith('.txt')  # save inference images 
