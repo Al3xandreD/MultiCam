@@ -44,8 +44,6 @@ def execResult(pathWeight):
     '''
 
     command="python yolov7/detect.py --source 0 --weights "+"'"+pathWeight+"'"
-    "detect.py --source 0 --weights '/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/Saves/yolov7/resultWeights/best.pt' --device mps"
-
     resultExec = subprocess.run(command, shell=True)
 
     print(resultExec.stdout)
