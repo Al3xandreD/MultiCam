@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="115edcb2-4d67-468e-80f9-0a2f3770f222" name="Changes" comment="restruct2">
+      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Early Versions/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/YoloV7/Sample reference/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/YoloV7/Sample reference/yolov7-pose-estimation-main/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/YoloV7/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/core/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/data/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/run/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/train/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/Camera.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/Camera.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/core_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/core_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/core_app_data_bridge.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/core_app_data_bridge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/imageprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Early Versions/imageprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/lan/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/profiler/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/lan/localnetwork.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/network/localnetwork.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/lan/urlconnection/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/network/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/lan/urlconnection/urlconnect.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/network/urlconnection/urlconnect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/launch_cmd.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/launch_cmd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/launch_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/launch_gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/models/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/yolo_models_utils/common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/models/experimental.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/yolo_models_utils/experimental.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/models/yolo.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/yolo_models_utils/yolo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/multiview/CameraSync.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/multiview/CameraSync.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/multiview/HandlerCamera.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/multiview/HandlerCamera.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/multiview/MultiviewHomogenous.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/multiview/MultiviewHomogenous.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/poseclassifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/poseclassifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/poseestimator.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/poseestimator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/ui/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/network/urlconnection/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/ui/auto_sizeable_qwidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/ui/auto_sizeable_qwidget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/ui/cameraview.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/ui/cameraview.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/ui/container.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/ui/container.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/ui/radio_buttons.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/ui/radio_buttons.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/wandb_logging/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/activations.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/activations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/add_nms.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/add_nms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/autoanchor.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/autoanchor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/aws/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/aws/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/aws/mime.sh" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/aws/mime.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/aws/resume.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/aws/resume.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/aws/test" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/aws/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/aws/userdata.sh" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/aws/userdata.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/datasets.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/datasets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/general.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/general.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/google_app_engine/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/google_app_engine/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/google_app_engine/additional_requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/google_app_engine/additional_requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/google_app_engine/app.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/google_app_engine/app.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/google_app_engine/test" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/google_app_engine/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/google_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/google_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/loss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/metrics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/plots.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/plots.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/profiler/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/ui/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/profiler/profiling_recorder.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/profiler/profiling_recorder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/torch_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/torch_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/wandb_logging/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/yolo_models_utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/wandb_logging/log_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/wandb_logging/log_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/wandb_logging/test" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/wandb_logging/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/utils/wandb_logging/wandb_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC/image_ml_utils/wandb_logging/wandb_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/yolov7/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/yolov7/models/common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/yolov7/models/experimental.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/YoloV7/Sample reference/yolov7-pose-estimation-main/models/experimental.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/yolov7/models/yolo.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/YoloV7/Sample reference/yolov7-pose-estimation-main/models/yolo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/yolov7/utilsyolo/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/yolov7/utilsyolo/activations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/yolov7/utilsyolo/add_nms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/yolov7/utilsyolo/autoanchor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/yolov7/utilsyolo/datasets.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/yolov7/utilsyolo/general.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/yolov7/utilsyolo/google_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/yolov7/utilsyolo/loss.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/yolov7/utilsyolo/metrics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/yolov7/utilsyolo/plots.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/yolov7/utilsyolo/torch_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/yolov7/utilsyolo/wandb_logging/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/yolov7/utilsyolo/wandb_logging/log_dataset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC (Image Processing)/Application PC V2/yolov7/utilsyolo/wandb_logging/wandb_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/YOLOV3/coco.names" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/YoloV3/coco.names" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/YOLOV3/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/YoloV3/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main/.github/FUNDING.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main/football1.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main/models/common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main/models/experimental.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main/models/yolo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main/pose-estimate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main/utils/activations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main/utils/add_nms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main/utils/autoanchor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main/utils/datasets.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main/utils/general.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main/utils/google_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main/utils/loss.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main/utils/metrics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main/utils/plots.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main/utils/torch_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main/utils/wandb_logging/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main/utils/wandb_logging/log_dataset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Detection Methods Tests/yolov7-pose-estimation-main/utils/wandb_logging/wandb_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/.gitmodules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/PDI___analiza_sylwetki.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/PDI___analiza_sylwetki.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/data/datasets/test/All.npz" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/data/datasets/test/All.npz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/data/datasets/test/Dynamic.npz" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/data/datasets/test/Dynamic.npz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/data/datasets/test/Static.npz" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/data/datasets/test/Static.npz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/data/models/All/keras_metadata.pb" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/data/models/All/keras_metadata.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/data/models/All/saved_model.pb" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/data/models/All/saved_model.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/data/models/All/variables/variables.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/data/models/All/variables/variables.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/data/models/All/variables/variables.index" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/data/models/All/variables/variables.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/data/models/Dynamic/saved_model.pb" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/data/models/Dynamic/saved_model.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/data/models/Dynamic/variables/variables.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/data/models/Dynamic/variables/variables.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/data/models/Dynamic/variables/variables.index" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/data/models/Dynamic/variables/variables.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/data/models/Static/saved_model.pb" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/data/models/Static/saved_model.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/data/models/Static/variables/variables.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/data/models/Static/variables/variables.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/data/models/Static/variables/variables.index" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/data/models/Static/variables/variables.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/docimages/architecture.png" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/docimages/architecture.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/docimages/elka.png" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/docimages/elka.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/docimages/ephi.png" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/docimages/ephi.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/docimages/ephiSample.png" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/docimages/ephiSample.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/docimages/legsXYbothHist.png" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/docimages/legsXYbothHist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/docimages/opOutput.png" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/docimages/opOutput.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/docimages/outputAll.gif" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/docimages/outputAll.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/hpc/consts.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/consts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/hpc/core/display.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/core/display.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/hpc/core/frame.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/core/frame.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/hpc/core/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/core/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/hpc/core/pose_estimation.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/core/pose_estimation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/hpc/core/preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/core/preprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/hpc/core/skeleton.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/core/skeleton.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/hpc/data/augment.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/data/augment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/hpc/data/bgrToRgb.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/data/bgrToRgb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/hpc/data/createDataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/data/createDataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/hpc/data/fillKeypoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/data/fillKeypoints.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/hpc/data/getStaticImages.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/data/getStaticImages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/hpc/data/makeLong.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/data/makeLong.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/hpc/data/proceedVideo.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/data/proceedVideo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/hpc/data/recordVideo.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/data/recordVideo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/hpc/data/viewImagesAsVideo.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/data/viewImagesAsVideo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/hpc/run/alpha_pose_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/run/alpha_pose_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/hpc/run/camera.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/run/camera.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/hpc/run/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/run/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/hpc/run/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/run/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/hpc/run/wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/run/wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/hpc/train/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/hpc/train/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/HPC-master/requirements.bat" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification/Sample reference/HPC-master/requirements.bat" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2czzVI33cigxp2Xd0XFo4sZWH3A" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/rayou/Documents/ENSTA Bretagne/MultiCam/MultiCam_Git/2_PC Server (Image Processing)/Computer Vision RnD/Pose classification",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam_Git\2_PC Server (Image Processing)\Computer Vision RnD\Pose classification" />
+      <recent name="C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam_Git\2_PC Server (Image Processing)\Computer Vision RnD\Detection Methods Tests\YoloV3" />
+      <recent name="C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam_Git\2_PC Server (Image Processing)\Computer Vision RnD\Detection Methods Tests\OpenPose" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam_Git\2_PC Server (Image Processing)\Computer Vision RnD\Detection Methods Tests\YoloV7" />
+      <recent name="C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam_Git\2_PC Server (Image Processing)\Computer Vision RnD\Pose classification\Sample reference" />
+      <recent name="C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam_Git\2_PC Server (Image Processing)\Computer Vision RnD\Detection Methods Tests\YoloV7\Sample reference" />
+      <recent name="C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam_Git\2_PC Server (Image Processing)\Application PC (Image Processing)\EarlyVersions" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="115edcb2-4d67-468e-80f9-0a2f3770f222" name="Changes" comment="" />
+      <created>1709129218705</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709129218705</updated>
+      <workItem from="1709129223220" duration="1082000" />
+      <workItem from="1709147359070" duration="2285000" />
+      <workItem from="1709737892638" duration="567000" />
+      <workItem from="1709825368541" duration="2466000" />
+    </task>
+    <task id="LOCAL-00001" summary="restruct2">
+      <option name="closed" value="true" />
+      <created>1709129465448</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709129465448</updated>
+    </task>
+    <task id="LOCAL-00002" summary="restruct2">
+      <option name="closed" value="true" />
+      <created>1709827457696</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709827457697</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="restruct2" />
+    <option name="LAST_COMMIT_MESSAGE" value="restruct2" />
+  </component>
+</project>
