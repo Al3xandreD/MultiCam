@@ -1,5 +1,6 @@
 import os
 import subprocess
+import tensorflow as tf
 
 def move2directory(pathYolo):
     '''
@@ -30,6 +31,7 @@ def training(pathTrain, pathData_train, pathWeights):
     :param pathWeights: paths to reference weights
     :return:
     '''
+    # TODO ajouter la version mps pour supporter apple silicon
     command="python "+"'"+pathTrain+"'" +" --workers 8 --device mps --batch-size 32 --data " + "'"+pathData_train+"'"+" --img 640 640 --cfg cfg/training/yolov7.yaml --weights '' --name yolov7 --hyp data/hyp.scratch.p5.yaml"
     command2="python "+"'"+pathTrain+"'"+" --workers 8 --img 640 --epochs 3 --data "+"'"+pathData_train+"'"+" --weights "+ "'"+pathWeights+"'"
     resultTrain = subprocess.run(command2, shell=True)
@@ -50,8 +52,8 @@ def execResult(pathWeight):
 
 if __name__=='__main__':
 
-    label_data=True
-    re_training=False
+    label_data=False
+    re_training=True
     exec_result=False
 
     # path for detection and draw boxes
