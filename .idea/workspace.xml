@@ -5,278 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="115edcb2-4d67-468e-80f9-0a2f3770f222" name="Changes" comment="restruct2">
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/HAAR Cascade/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/HAAR Cascade/haarcascade_frontalface_default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/HAAR Cascade/haarcascade_fullbody.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/HAAR Cascade/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/OpenPose/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/OpenPose/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV3/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV3/coco.names" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV3/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/.github/FUNDING.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/football1.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/models/common.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/models/experimental.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/models/yolo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/pose-estimate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/activations.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/add_nms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/autoanchor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/datasets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/general.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/google_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/loss.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/metrics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/plots.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/torch_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/wandb_logging/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/wandb_logging/log_dataset.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/wandb_logging/wandb_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/imageprocess.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/models/common.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/models/experimental.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/models/yolo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/utils/activations.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/utils/add_nms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/utils/autoanchor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/utils/datasets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/utils/general.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/utils/google_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/utils/loss.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/utils/metrics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/utils/plots.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/utils/torch_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/utils/wandb_logging/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/utils/wandb_logging/log_dataset.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection methods/YoloV7 Pose estimation/utils/wandb_logging/wandb_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/.gitmodules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/PDI___analiza_sylwetki.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/data/datasets/test/All.npz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/data/datasets/test/Dynamic.npz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/data/datasets/test/Static.npz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/data/models/All/variables/variables.data-00000-of-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/data/models/All/variables/variables.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/data/models/Dynamic/variables/variables.data-00000-of-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/data/models/Dynamic/variables/variables.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/data/models/Static/variables/variables.data-00000-of-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/data/models/Static/variables/variables.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/docimages/architecture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/docimages/elka.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/docimages/ephi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/docimages/ephiSample.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/docimages/legsXYbothHist.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/docimages/opOutput.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/docimages/outputAll.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/consts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/core/display.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/core/frame.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/core/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/core/pose_estimation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/core/preprocess.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/core/skeleton.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/data/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/data/augment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/data/bgrToRgb.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/data/createDataset.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/data/fillKeypoints.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/data/getStaticImages.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/data/makeLong.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/data/proceedVideo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/data/recordVideo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/data/viewImagesAsVideo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/run/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/run/alpha_pose_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/run/camera.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/run/run.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/run/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/run/wrapper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/train/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/train/train.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/requirements.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Auto_dataset_tools/web_scrapper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/HAAR Cascade/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/HAAR Cascade/haarcascade_frontalface_default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/HAAR Cascade/haarcascade_fullbody.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/HAAR Cascade/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/OpenPose/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/OpenPose/graph_opt.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/OpenPose/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV3/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV3/coco.names" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV3/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/.github/FUNDING.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/football1.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/models/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/models/common.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/models/experimental.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/models/yolo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/pose-estimate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/activations.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/add_nms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/autoanchor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/datasets.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/general.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/google_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/loss.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/metrics.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/plots.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/torch_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/wandb_logging/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/wandb_logging/log_dataset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/Sample reference/yolov7-pose-estimation-main/utils/wandb_logging/wandb_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/imageprocess.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/models/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/models/common.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/models/experimental.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/models/yolo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/utils/activations.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/utils/add_nms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/utils/autoanchor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/utils/datasets.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/utils/general.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/utils/google_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/utils/loss.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/utils/metrics.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/utils/plots.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/utils/torch_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/utils/wandb_logging/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/utils/wandb_logging/log_dataset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human detection/YoloV7 Pose estimation/utils/wandb_logging/wandb_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/.gitmodules" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/PDI___analiza_sylwetki.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/data/datasets/test/All.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/data/datasets/test/Dynamic.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/data/datasets/test/Static.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/data/models/All/variables/variables.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/data/models/All/variables/variables.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/data/models/Dynamic/saved_model.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/data/models/Dynamic/variables/variables.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/data/models/Dynamic/variables/variables.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/data/models/Static/variables/variables.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/data/models/Static/variables/variables.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/docimages/architecture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/docimages/elka.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/docimages/ephi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/docimages/ephiSample.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/docimages/legsXYbothHist.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/docimages/opOutput.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/docimages/outputAll.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/consts.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/core/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/core/display.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/core/frame.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/core/model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/core/pose_estimation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/core/preprocess.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/core/skeleton.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/data/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/data/augment.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/data/bgrToRgb.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/data/createDataset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/data/fillKeypoints.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/data/getStaticImages.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/data/makeLong.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/data/proceedVideo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/data/recordVideo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/data/viewImagesAsVideo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/run/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/run/alpha_pose_api.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/run/camera.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/run/run.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/run/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/run/wrapper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/train/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/hpc/train/train.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/HPC-master/requirements.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/Sample reference/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/$Run_Auto_Labeling_Fireman.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Fireman/1_raw_train_dataset/B9731799396Z.1_20220815164644_000+G3AL2M0R0.1-0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Fireman/1_raw_train_dataset/images.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Fireman/2_labeled_train_dataset/B9731799396Z.1_20220815164644_000+G3AL2M0R0.1-0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Fireman/2_labeled_train_dataset/images.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Fireman/2_labeled_train_dataset/labels/B9731799396Z.1_20220815164644_000+G3AL2M0R0.1-0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Fireman/2_labeled_train_dataset/labels/images.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/autolabeling.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/detect.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/drawingBoxes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/models/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/models/common.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/models/experimental.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/models/yolo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/activations.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/add_nms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/autoanchor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/aws/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/aws/mime.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/aws/resume.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/aws/test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/aws/userdata.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/datasets.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/general.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/google_app_engine/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/google_app_engine/additional_requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/google_app_engine/app.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/google_app_engine/test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/google_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/loss.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/metrics.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/plots.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/profiler/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/profiler/activations.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/profiler/add_nms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/profiler/autoanchor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/profiler/datasets.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/profiler/general.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/profiler/google_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/profiler/loss.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/profiler/metrics.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/profiler/plots.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/profiler/profiling_recorder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/profiler/torch_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/profiler/wandb_logging/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/profiler/wandb_logging/log_dataset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/profiler/wandb_logging/wandb_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/torch_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/urlconnection/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/urlconnection/urlconnect.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/wandb_logging/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/wandb_logging/log_dataset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/wandb_logging/test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/utils/wandb_logging/wandb_utils.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -309,21 +38,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/rayou/Documents/ENSTA Bretagne/MultiCam/MultiCam_Git/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/run",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rayou/Documents/ENSTA Bretagne/MultiCam/MultiCam_Git/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/run&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam_Git\2_PC Server (Image Processing)\RnD\Computer Vision\Human pose classification methods\Sample reference\HPC-master\hpc\run" />
@@ -397,6 +126,7 @@
       <workItem from="1709147359070" duration="2285000" />
       <workItem from="1709737892638" duration="567000" />
       <workItem from="1709825368541" duration="39136000" />
+      <workItem from="1709917840691" duration="499000" />
     </task>
     <task id="LOCAL-00001" summary="restruct2">
       <option name="closed" value="true" />
@@ -446,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709898765573</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="restruct2">
+      <option name="closed" value="true" />
+      <created>1709917915503</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709917915504</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
