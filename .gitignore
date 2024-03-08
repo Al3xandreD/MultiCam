@@ -9,7 +9,7 @@
 
 # ML weights #
 *.pt
-
+*.pb
 
 
 
