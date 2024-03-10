@@ -7,6 +7,8 @@ import hpc.consts as c
 import os
 
 
+
+
 def parseArgs():
     parser = argparse.ArgumentParser()
     parser.add_argument("-v", "--video", type=str, help="Name of video you want to estimate relative to /data/videos.")
