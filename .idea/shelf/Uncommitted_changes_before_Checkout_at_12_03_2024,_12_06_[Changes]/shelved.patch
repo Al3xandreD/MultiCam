@@ -1,0 +1,133 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"115edcb2-4d67-468e-80f9-0a2f3770f222\" name=\"Changes\" comment=\"restruct2\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Python Unit Test\" />\n        <option value=\"Python Script\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"NamedScopeManager\">\n    <scope name=\"Unnamed\" pattern=\"file[MultiCam_Git]:2_PC Server (Image Processing)/Application PC/*\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;customColor&quot;: &quot;&quot;,\n  &quot;associatedIndex&quot;: 2\n}</component>\n  <component name=\"ProjectId\" id=\"2czzVI33cigxp2Xd0XFo4sZWH3A\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/rayou/Documents/ENSTA Bretagne/MultiCam/MultiCam_Git/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/run&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"C:\\Users\\rayou\\Documents\\ENSTA Bretagne\\MultiCam\\MultiCam_Git\\2_PC Server (Image Processing)\\RnD\\Computer Vision\\Human pose classification methods\\Sample reference\\HPC-master\\hpc\\run\" />\n      <recent name=\"C:\\Users\\rayou\\Documents\\ENSTA Bretagne\\MultiCam\\MultiCam_Git\\2_PC Server (Image Processing)\\RnD\\Computer Vision\\Trains\" />\n      <recent name=\"C:\\Users\\rayou\\Documents\\ENSTA Bretagne\\MultiCam\\MultiCam_Git\\2_PC Server (Image Processing)\\Application PC\" />\n      <recent name=\"C:\\Users\\rayou\\Documents\\ENSTA Bretagne\\MultiCam\\MultiCam_Git\\2_PC Server (Image Processing)\\Application PC\\poseestimation\\weights\" />\n      <recent name=\"C:\\Users\\rayou\\Documents\\ENSTA Bretagne\\MultiCam\\MultiCam_Git\\2_PC Server (Image Processing)\\Application PC\\poseestimation\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"C:\\Users\\rayou\\Documents\\ENSTA Bretagne\\MultiCam\\MultiCam_Git\\2_PC Server (Image Processing)\\Application PC\\poseestimation\\weights\" />\n      <recent name=\"C:\\Users\\rayou\\Documents\\ENSTA Bretagne\\MultiCam\\MultiCam_Git\\2_PC Server (Image Processing)\\Application PC\\poseestimation\" />\n      <recent name=\"C:\\Users\\rayou\\Documents\\ENSTA Bretagne\\MultiCam\\MultiCam_Git\\2_PC Server (Image Processing)\\Application PC\\ml_imageprocess_utils\" />\n      <recent name=\"C:\\Users\\rayou\\Documents\\ENSTA Bretagne\\MultiCam\\MultiCam_Git\\2_PC Server (Image Processing)\\Application PC\" />\n      <recent name=\"C:\\Users\\rayou\\Documents\\ENSTA Bretagne\\MultiCam\\MultiCam_Git\\2_PC Server (Image Processing)\\Application PC\\posedetection\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Python.python hpc/run/run.py -v video -w write_name -c -p -g -d\">\n    <configuration name=\"python hpc/run/run.py -v video -w write_name -c -p -g -d\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\n      <module name=\"MultiCam_Git\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\n      <option name=\"SCRIPT_NAME\" value=\"hpc/run/run.py\" />\n      <option name=\"PARAMETERS\" value=\"-v video -w write_name -c -p -g -d\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\n      <option name=\"INPUT_FILE\" value=\"\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"Python tests for test_camera.TestGenericCamera\" type=\"tests\" factoryName=\"Autodetect\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"MultiCam_Git\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\n      <option name=\"_new_additionalArguments\" value=\"&quot;&quot;\" />\n      <option name=\"_new_target\" value=\"&quot;test_camera.TestGenericCamera&quot;\" />\n      <option name=\"_new_targetType\" value=\"&quot;PYTHON&quot;\" />\n      <method v=\"2\" />\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Python.python hpc/run/run.py -v video -w write_name -c -p -g -d\" />\n        <item itemvalue=\"Python tests.Python tests for test_camera.TestGenericCamera\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"115edcb2-4d67-468e-80f9-0a2f3770f222\" name=\"Changes\" comment=\"\" />\n      <created>1709129218705</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1709129218705</updated>\n      <workItem from=\"1709129223220\" duration=\"1082000\" />\n      <workItem from=\"1709147359070\" duration=\"2285000\" />\n      <workItem from=\"1709737892638\" duration=\"567000\" />\n      <workItem from=\"1709825368541\" duration=\"39136000\" />\n      <workItem from=\"1709917840691\" duration=\"499000\" />\n      <workItem from=\"1710048767285\" duration=\"118000\" />\n      <workItem from=\"1710048918703\" duration=\"10000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"restruct2\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709129465448</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709129465448</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"restruct2\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709827457696</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709827457697</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"restruct2\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709828046977</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709828046977</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"restruct2\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709828192451</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709828192451</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"restruct2\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709897543046</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709897543046</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"restruct2\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709898765572</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709898765573</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"restruct2\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1709917915503</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1709917915504</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"8\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"restruct2\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"restruct2\" />\n  </component>\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\n    <SUITE FILE_PATH=\"coverage/MultiCam_Git$.coverage\" NAME=\" Coverage Results\" MODIFIED=\"1709833867016\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC\" />\n    <SUITE FILE_PATH=\"coverage/MultiCam_Git$run.coverage\" NAME=\"run Coverage Results\" MODIFIED=\"1709915982947\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/run\" />\n    <SUITE FILE_PATH=\"coverage/MultiCam_Git$launch_gui.coverage\" NAME=\"launch_gui Coverage Results\" MODIFIED=\"1709853733201\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC\" />\n    <SUITE FILE_PATH=\"coverage/MultiCam_Git$web_scrapper.coverage\" NAME=\"web_scrapper Coverage Results\" MODIFIED=\"1709914603936\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Auto_dataset_tools\" />\n    <SUITE FILE_PATH=\"coverage/MultiCam_Git$general.coverage\" NAME=\"general Coverage Results\" MODIFIED=\"1709847343425\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC/ml_imageprocess_utils\" />\n    <SUITE FILE_PATH=\"coverage/MultiCam_Git$auto_labeling.coverage\" NAME=\"auto_labeling Coverage Results\" MODIFIED=\"1709909776748\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training\" />\n    <SUITE FILE_PATH=\"coverage/MultiCam_Git$python_hpc_run_run_py__v_video__w_write_name__c__p__g__d.coverage\" NAME=\"python hpc/run/run.py -v video -w write_name -c -p -g -d Coverage Results\" MODIFIED=\"1709916461308\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master\" />\n    <SUITE FILE_PATH=\"coverage/MultiCam_Git$detect.coverage\" NAME=\"detect Coverage Results\" MODIFIED=\"1709904827943\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training\" />\n    <SUITE FILE_PATH=\"coverage/MultiCam_Git$google_image_scraping.coverage\" NAME=\"google-image-scraping Coverage Results\" MODIFIED=\"1709915629381\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Auto_dataset_tools/google-image-scrapping-master\" />\n    <SUITE FILE_PATH=\"coverage/MultiCam_Git$poseclassifier.coverage\" NAME=\"poseclassifier Coverage Results\" MODIFIED=\"1709848251978\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC/poseclassification\" />\n    <SUITE FILE_PATH=\"coverage/MultiCam_Git$binary_dataset_composer.coverage\" NAME=\"binary_dataset_composer Coverage Results\" MODIFIED=\"1709913374931\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Auto_dataset_tools\" />\n    <SUITE FILE_PATH=\"coverage/MultiCam_Git$autolabeling.coverage\" NAME=\"autolabeling Coverage Results\" MODIFIED=\"1709908953750\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training\" />\n  </component>\n</project>
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,9 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="115edcb2-4d67-468e-80f9-0a2f3770f222" name="Changes" comment="restruct2">
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-    </list>
++    <list default="true" id="115edcb2-4d67-468e-80f9-0a2f3770f222" name="Changes" comment="restruct2" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -38,21 +36,20 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;C:/Users/rayou/Documents/ENSTA Bretagne/MultiCam/MultiCam_Git/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/run&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "WebServerToolWindowFactoryState": "false",
++    "last_opened_file_path": "C:/Users/rayou/Documents/ENSTA Bretagne/MultiCam/MultiCam_Git/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/run",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
++    "nodejs_package_manager_path": "npm",
++    "vue.rearranger.settings.migration": "true"
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam_Git\2_PC Server (Image Processing)\RnD\Computer Vision\Human pose classification methods\Sample reference\HPC-master\hpc\run" />
+@@ -69,9 +66,10 @@
+       <recent name="C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam_Git\2_PC Server (Image Processing)\Application PC\posedetection" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="Python.python hpc/run/run.py -v video -w write_name -c -p -g -d">
++  <component name="RunManager">
+     <configuration name="python hpc/run/run.py -v video -w write_name -c -p -g -d" type="PythonConfigurationType" factoryName="Python" temporary="true">
+       <module name="MultiCam_Git" />
++      <option name="ENV_FILES" value="" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+       <option name="PARENT_ENVS" value="true" />
+       <envs>
+@@ -94,6 +92,7 @@
+     </configuration>
+     <configuration name="Python tests for test_camera.TestGenericCamera" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+       <module name="MultiCam_Git" />
++      <option name="ENV_FILES" value="" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+       <option name="PARENT_ENVS" value="true" />
+       <option name="SDK_HOME" value="" />
+@@ -114,6 +113,13 @@
+       </list>
+     </recent_temporary>
+   </component>
++  <component name="SharedIndexes">
++    <attachedChunks>
++      <set>
++        <option value="bundled-python-sdk-7a29c1521ef0-c986f194a52a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.11799.298" />
++      </set>
++    </attachedChunks>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -129,6 +135,7 @@
+       <workItem from="1709917840691" duration="499000" />
+       <workItem from="1710048767285" duration="118000" />
+       <workItem from="1710048918703" duration="10000" />
++      <workItem from="1710241497822" duration="104000" />
+     </task>
+     <task id="LOCAL-00001" summary="restruct2">
+       <option name="closed" value="true" />
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"Python 3.10\" project-jdk-type=\"Python SDK\" />\n</project>
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	
++++ b/.idea/misc.xml	
+@@ -1,4 +1,4 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10" project-jdk-type="Python SDK" />
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 virtualenv at ~/venv-metal" project-jdk-type="Python SDK" />
+ </project>
+\ No newline at end of file
+Index: .idea/MultiCam_Git.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<module type=\"PYTHON_MODULE\" version=\"4\">\n  <component name=\"NewModuleRootManager\">\n    <content url=\"file://$MODULE_DIR$\" />\n    <orderEntry type=\"jdk\" jdkName=\"Python 3.10\" jdkType=\"Python SDK\" />\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\n  </component>\n  <component name=\"PyDocumentationSettings\">\n    <option name=\"format\" value=\"GOOGLE\" />\n    <option name=\"myDocStringFormat\" value=\"Google\" />\n  </component>\n</module>
+===================================================================
+diff --git a/.idea/MultiCam_Git.iml b/.idea/MultiCam_Git.iml
+--- a/.idea/MultiCam_Git.iml	
++++ b/.idea/MultiCam_Git.iml	
+@@ -2,11 +2,7 @@
+ <module type="PYTHON_MODULE" version="4">
+   <component name="NewModuleRootManager">
+     <content url="file://$MODULE_DIR$" />
+-    <orderEntry type="jdk" jdkName="Python 3.10" jdkType="Python SDK" />
++    <orderEntry type="jdk" jdkName="Python 3.11 virtualenv at ~/venv-metal" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
+-  <component name="PyDocumentationSettings">
+-    <option name="format" value="GOOGLE" />
+-    <option name="myDocStringFormat" value="Google" />
+-  </component>
+ </module>
+\ No newline at end of file
