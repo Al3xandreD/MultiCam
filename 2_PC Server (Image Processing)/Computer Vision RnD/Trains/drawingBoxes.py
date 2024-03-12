@@ -10,7 +10,9 @@ def move2directory(pathYolo):
     '''
     file_directory = os.path.dirname(pathYolo)
     os.chdir(file_directory)  # navigating to yolo position
-def detection(pathImage, pathWeights):
+
+
+def detection(pathDatabase, pathWeights):
     '''
     Applies Yolo inference to an image
     :param pathImage: path of image
@@ -18,12 +20,24 @@ def detection(pathImage, pathWeights):
     :return:
     '''
 
-    command = "python yolov7/detect.py --source "+"'"+pathImage+"'"+" --weights "+"'"+pathWeights+"'"+" --save-txt"
+    command = "python yolov7/detect.py --source "+"'"+pathDatabase+"'"+" --weights "+"'"+pathWeights+"'"+" --save-txt"
     resultYolo = subprocess.run(command, shell=True)
 
     print(resultYolo.stdout)
 
-def training(pathTrain, pathData_train, pathWeights):
+def detectionUltralytics(pathDatabase):
+    '''
+    Applies Yolo inference to a database usin Yolo ultralytics
+    :param pathDatabase:
+    :param pathWeights:
+    :return:
+    '''
+
+    command="python engine/predictor.py model=yolov8n.pt source="+pathDatabase
+    resultYolo = subprocess.run(command, shell=True)
+    print(resultYolo.stdout)
+
+def training(pathTrain, pathData_train, pathWeights, epochs):
     '''
     Trains yolo according to the given dataset
     :param pathTrain: path to train.py
@@ -32,9 +46,9 @@ def training(pathTrain, pathData_train, pathWeights):
     :return:
     '''
     # TODO ajouter la version mps pour supporter apple silicon
-    command="python "+"'"+pathTrain+"'" +" --workers 8 --device mps --batch-size 32 --data " + "'"+pathData_train+"'"+" --img 640 640 --cfg cfg/training/yolov7.yaml --weights '' --name yolov7 --hyp data/hyp.scratch.p5.yaml"
-    command2="python "+"'"+pathTrain+"'"+" --workers 8 --img 640 --epochs 3 --data "+"'"+pathData_train+"'"+" --weights "+ "'"+pathWeights+"'"
-    resultTrain = subprocess.run(command2, shell=True)
+    command="python "+"'"+pathTrain+"'" +" --workers 8 --device mps --epochs " + epochs + " --data " + "'"+pathData_train+"'"+" --img 640 --weights "+"'"+pathWeights+"'"+""
+    command2="python "+"'"+pathTrain+"'"+" --workers 8 --img 640 --epochs "+ epochs +" --data "+"'"+pathData_train+"'"+" --weights "+ "'"+pathWeights+"'"
+    resultTrain = subprocess.run(command, shell=True)
 
     print(resultTrain.stdout)
 
@@ -52,26 +66,30 @@ def execResult(pathWeight):
 
 if __name__=='__main__':
 
-    label_data=False
-    re_training=True
+    label_data=True
+    re_training=False
     exec_result=False
 
     # path for detection and draw boxes
     pathYolo = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/Saves/yolov7"
-    pathImage = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/MultiCam/PC Server (Image Processing)/Database/1_image-md.jpg"
-    pathWeights = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/Saves/yolov7/yolov7.pt"
-    pathDatabase = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/MultiCam/PC Server (Image Processing)/archive"
+    pathWeights = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/Saves/yolov7/yolov7.pt"    # standard weights
+    pathDatabase = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/STIC/MultiCam/2_PC Server (Image Processing)/Computer Vision RnD/Trains/archive"
 
     # path for training
     pathData_train = "MultiCamTraining/data.yaml"
     pathTrain = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/Saves/yolov7/train.py"
 
-    # path for executing
+    # path for applying retrained model
     pathBest="resultWeights/best.pt"
 
+    # pathUltralytics
+    pathYoloUltralytics="/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/Saves/ultralytics-main/ultralytics/engine"
+
     if label_data:
+        #move2directory(pathYoloUltralytics)
+        #detectionUltralytics(pathDatabase)
         move2directory(pathYolo)
-        detection(pathDatabase, pathWeights)
+        detection(pathDatabase,pathWeights)
 
     if re_training:
         move2directory(pathYolo)

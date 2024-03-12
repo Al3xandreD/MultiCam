@@ -205,12 +205,13 @@ def plotInterestPoint(point):
 if __name__=='__main__':
 
     # Merton dataset
-    p1 = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/MultiCam/PC Server (Image Processing)/Computer Vision R&D/Test dataset/kampaA.png"
-    p2 = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/MultiCam/PC Server (Image Processing)/Computer Vision R&D/Test dataset/kampaB.png"
+    "/Users/alexandredermouche/Desktop/MultiCam copy/PC Server (Image Processing)/Computer Vision R&D/"
+    p1 = "/Users/alexandredermouche/Desktop/MultiCam copy/PC Server (Image Processing)/Computer Vision R&D/Test dataset/kampaA.png"
+    p2 = "/Users/alexandredermouche/Desktop/MultiCam copy/PC Server (Image Processing)/Computer Vision R&D/Test dataset/kampaB.png"
 
     # images correspondances
     # treating extraction from ground truth in matlab file
-    mat=scipy.io.loadmat("/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/MultiCam/PC Server (Image Processing)/Computer Vision R&D/Test dataset/kampa_vpts.mat")
+    mat=scipy.io.loadmat("/Users/alexandredermouche/Desktop/MultiCam copy/PC Server (Image Processing)/Computer Vision R&D/Test dataset/kampa_vpts.mat")
     # returns a dictionnary with variable names as keys and loaded matrices as values
 
     liste_values=list(mat.values())
@@ -231,7 +232,7 @@ if __name__=='__main__':
         l_points_prime=np.hstack((l_points_prime, point_prime))     # coordinates of correspondence points in camera 2
 
     l_normalized,T=normalisation(l_points)  # normalizing points
-    #l_normalized_prime,T=normalisation(l_points_prime)
+    l_normalized_prime,T=normalisation(l_points_prime)
 
     A=computeAbis(l_points, l_points_prime) # matrix for computing F
     F=fundamentalMatrixSvd(A,T) # fundamental matrix
