@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="115edcb2-4d67-468e-80f9-0a2f3770f222" name="Changes" comment="restruct2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="115edcb2-4d67-468e-80f9-0a2f3770f222" name="Changes" comment="restruct2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,6 +70,7 @@
   <component name="RunManager" selected="Python.python hpc/run/run.py -v video -w write_name -c -p -g -d">
     <configuration name="python hpc/run/run.py -v video -w write_name -c -p -g -d" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MultiCam_Git" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -94,6 +93,7 @@
     </configuration>
     <configuration name="Python tests for test_camera.TestGenericCamera" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="MultiCam_Git" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
