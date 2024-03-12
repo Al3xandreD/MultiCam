@@ -17,7 +17,7 @@ def detection(pathImage, pathWeights):
     :return:
     '''
 
-    command = "python yolov7/detect.py --source "+"'"+pathImage+"'"+" --weights "+"'"+pathWeights+"'"+" --save-txt"
+    command = "python detect.py --source "+"'"+pathImage+"'"+" --weights "+"'"+pathWeights+"'"+" --save-txt"
     resultYolo = subprocess.run(command, shell=True)
 
     print(resultYolo.stdout)
@@ -58,9 +58,8 @@ if __name__=='__main__':
 
     # path for detection and draw boxes
     pathYolo = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/Saves/yolov7"
-    pathImage = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/MultiCam/PC Server (Image Processing)/Database/1_image-md.jpg"
-    pathWeights = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/Saves/yolov7/yolov7.pt"
-    pathDatabase = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/MultiCam/PC Server (Image Processing)/archive"
+    pathWeights = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/STIC/MultiCam/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Auto_dataset_tools/yolov7.pt"
+    pathDatabase = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/STIC/MultiCam/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Fireman/dataset"
 
     # path for training
     pathData_train = "MultiCamTraining/data.yaml"
@@ -70,7 +69,7 @@ if __name__=='__main__':
     pathBest="resultWeights/best.pt"
 
     if label_data:
-        move2directory(pathYolo)
+        #move2directory(pathYolo)
         detection(pathDatabase, pathWeights)
 
     if re_training:
