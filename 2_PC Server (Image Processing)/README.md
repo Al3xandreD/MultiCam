@@ -20,4 +20,4 @@ Cette partie du projet MultiCam
 ├── LICENSE        # Licence du projet
 └── README.md      # Documentation principale du projet (ce fichier)
 
-Consultez [a relative link](2_PC Server (Image Processing)/README.md) pour plus de détails sur l'API du projet.
+Consultez [a relative link](docs/api/README.md) pour plus de détails sur l'API du projet.
