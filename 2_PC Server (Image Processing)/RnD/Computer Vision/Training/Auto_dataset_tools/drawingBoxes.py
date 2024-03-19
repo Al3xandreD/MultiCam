@@ -30,7 +30,7 @@ def training(pathTrain, pathData_train, pathWeights):
     :param pathWeights: paths to reference weights
     :return:
     '''
-    command="python "+"'"+pathTrain+"'" +" --workers 8 --device mps --batch-size 32 --data " + "'"+pathData_train+"'"+" --img 640 640 --cfg cfg/training/yolov7.yaml --weights '' --name yolov7 --hyp data/hyp.scratch.p5.yaml"
+    # command="python "+"'"+pathTrain+"'" +" --workers 8 --device mps --batch-size 32 --data " + "'"+pathData_train+"'"+" --img 640 640 --cfg cfg/training/yolov7.yaml --weights '' --name yolov7 --hyp data/hyp.scratch.p5.yaml"
     command2="python "+"'"+pathTrain+"'"+" --workers 8 --img 640 --epochs 3 --data "+"'"+pathData_train+"'"+" --weights "+ "'"+pathWeights+"'"
     resultTrain = subprocess.run(command2, shell=True)
 
@@ -52,18 +52,18 @@ def execResult(pathWeight):
 
 if __name__=='__main__':
 
-    label_data=True
-    re_training=False
+    label_data=False
+    re_training=True
     exec_result=False
 
     # path for detection and draw boxes
-    pathYolo = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/Saves/yolov7"
+    pathYolo = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/STIC/MultiCam/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Auto_dataset_tools"
     pathWeights = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/STIC/MultiCam/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Auto_dataset_tools/yolov7.pt"
     pathDatabase = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/STIC/MultiCam/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Fireman/dataset"
 
     # path for training
-    pathData_train = "MultiCamTraining/data.yaml"
-    pathTrain = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/Saves/yolov7/train.py"
+    pathData_train = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/STIC/MultiCam/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Fireman/MultiCamTraining/data.yaml"
+    pathTrain = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/STIC/MultiCam/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Auto_dataset_tools/train.py"
 
     # path for executing
     pathBest="resultWeights/best.pt"
