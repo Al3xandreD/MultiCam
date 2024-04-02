@@ -30,8 +30,8 @@ def training(pathTrain, pathData_train, pathWeights):
     :param pathWeights: paths to reference weights
     :return:
     '''
-    command="python "+"'"+pathTrain+"'" +" --workers 8 --device mps --batch-size 32 --data " + "'"+pathData_train+"'"+" --img 640 640 --cfg cfg/training/yolov7.yaml --weights '' --name yolov7 --hyp data/hyp.scratch.p5.yaml"
-    command2="python "+"'"+pathTrain+"'"+" --workers 8 --img 640 --epochs 3 --data "+"'"+pathData_train+"'"+" --weights "+ "'"+pathWeights+"'"
+    command="python "+"'"+pathTrain+"'" +" --workers 8 --device mps --batch-size 32 --dataF " + "'"+pathData_train+"'"+" --img 640 640 --cfg cfg/training/yolov7.yaml --weights '' --name yolov7 --hyp dataF/hyp.scratch.p5.yaml"
+    command2="python "+"'"+pathTrain+"'"+" --workers 8 --img 640 --epochs 3 --dataF "+"'"+pathData_train+"'"+" --weights "+ "'"+pathWeights+"'"
     resultTrain = subprocess.run(command2, shell=True)
 
     print(resultTrain.stdout)
@@ -63,7 +63,7 @@ if __name__=='__main__':
     pathDatabase = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/MultiCam/PC Server (Image Processing)/archive"
 
     # path for training
-    pathData_train = "MultiCamTraining/data.yaml"
+    pathData_train = "MultiCamTraining/dataF.yaml"
     pathTrain = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/Saves/yolov7/train.py"
 
     # path for executing

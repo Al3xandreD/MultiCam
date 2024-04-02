@@ -7,10 +7,12 @@ from utils.plots import colors, plot_one_box_kpt
 from camera import GenericCamera
 from poseestimation.poseestimator import PoseEstimator
 from poseclassification.poseclassifier import SymbolicPoseClassifier
-
 from network.localnetwork import *
 
-#T
+
+
+
+
 common_resources_dir = "\#Common Resources"
 root_folder_content_signature = common_resources_dir  # To find root folder automatically
 
@@ -160,6 +162,12 @@ class Main:
         self.pose_classifier = SymbolicPoseClassifier()
         ###########################################################
 
+        ################# Init output server ######################
+        #TODO Fix problem here with output server init
+        #self.out_stream = FrameStream()
+        ###########################################################
+
+
     def update(self):
         j = 0
         n = len(self.cameras)
@@ -179,12 +187,11 @@ class Main:
                             frame = draw_poses(frame, results, self.names, line_thickness=self.opt.line_thickness,
                                                hide_conf=self.opt.hide_conf, hide_labels=self.opt.hide_labels)
 
-                        # pose classifier
-                        #self.pose_classifier.symbolic_classify(results, 10)
+                        # Pose classifier
+                        # self.pose_classifier.symbolic_classify(results, 10)
 
-            # send_to_stream(frame)
-            # Send to the shared database (for internal app component)
             # Send the stream video
+           # send_to_stream(frame, self.out_stream)
 
             output[i] = frame
             frame = None

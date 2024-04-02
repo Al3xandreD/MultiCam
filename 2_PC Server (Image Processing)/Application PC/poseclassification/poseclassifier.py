@@ -30,6 +30,7 @@ class SymbolicPoseClassifier:
              [[0, 0], [0, 0], [20, inf], [60, 0], [3, inf]],
              ])
 
+        # Measures / Observations
         self.xyxy_buff = []
         self.kpts_buff = []
         self.w_h_ratio = -1
@@ -39,6 +40,8 @@ class SymbolicPoseClassifier:
         self.idle_time = -1
         self.acceleration = 0
         self.avg_acceleration = -1
+        self.kpts_xy_speeds = None
+
         self.labels = ["unused", "dynamique", "immobile", "choc"]
 
     def compare(self, measures_vec, thresholds_mat):
@@ -85,7 +88,7 @@ class SymbolicPoseClassifier:
         steps = 3
         num_kpts = len(kpts) // steps
         # arr = self.kpts_buff[0].detach().cpu().numpy()
-        kpts_xy_speeds = torch.zeros_like(self.kpts_buff[0].unfold(0, 2, 1)[::steps])
+        self.kpts_xy_speeds = torch.zeros_like(self.kpts_buff[0].unfold(0, 2, 1)[::steps])
 
         # TODO optimize calculus :
 

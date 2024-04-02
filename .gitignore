@@ -10,7 +10,7 @@
 # ML weights #
 *.pt
 *.pb
-
+*.npz
 
 
 

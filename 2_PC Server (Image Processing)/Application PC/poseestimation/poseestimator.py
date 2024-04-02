@@ -42,7 +42,7 @@ class PoseEstimator:
         image = transforms.ToTensor()(image)
         image = torch.tensor(np.array([image.numpy()]))
 
-        image = image.to(self.device)  # convert image data to device
+        image = image.to(self.device)  # convert image dataF to device
         image = image.float()  # convert image to float precision (cpu)
 
         self.profiler.start()
