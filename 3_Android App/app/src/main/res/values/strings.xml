@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Final_App</string>
+    <string name="nom_projet">Projet Système Multicam UE 3.4 et 4.4</string>
+    <string name="nom_encadrants">Encadrants : A. Toumi, J.C. Cexus</string>
+    <string name="numero_version">Version : 0.1</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

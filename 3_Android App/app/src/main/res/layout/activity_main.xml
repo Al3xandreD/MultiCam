@@ -12,7 +12,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="15"
-        android:hint="text_a_remplacer"
+        android:hint="Taper adresse"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -30,4 +30,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/saisi_batiment"
         tools:listitem="@layout/layout_list_batiment" />
+
+<!--    <include-->
+<!--        android:id="@+id/customListViewContainer"-->
+<!--        layout="@layout/layout_list_batiment"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:divider="@android:color/black"-->
+<!--        android:dividerHeight="10.0sp"-->
+<!--        android:scrollbars="vertical"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/saisi_batiment"-->
+<!--        tools:listitem="@layout/layout_list_batiment" />-->
+
+    <!--TODO voir si faire une acrivité page de garde avant
+        aurait un intéret avec un module pour s'authentififier
+        sinon ajouter une image de l'ENSTA et le nom du projet-->
+
 </androidx.constraintlayout.widget.ConstraintLayout>
