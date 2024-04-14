@@ -40,6 +40,7 @@ def stereoCorrespondance(img_left,img_right, i_pixel_left,f_left,f_right):
     dc_min=np.min()
     Zd=np.zeros((1,dc_max-dc_min))
 
+
 def knnCorrespondance(img_left,img_right):
     '''
 
@@ -127,6 +128,33 @@ def compHisto(hist_left, hist_right):
     '''
 
     return np.sum(np.abs(hist_left-hist_right), axis=0)
+
+def newStereoCorrespondance(img_left,img_right, i_pixel_left, f_left, f_right):
+    '''
+
+    :param img_left:
+    :param img_right:
+    :param i_pixel_left:
+    :param f_left:
+    :param f_right:
+    :return:
+    '''
+
+    # TODO:definir le mask
+    # TODO deplacer le mask
+    # TODO comparer les histogrammes
+
+    mask_size=3
+    for i in range(img_right.shape[0]): # ligne
+        for j in range(img_right.shape[1]): # colonne
+            mask=img_right[i:i+mask_size-1,j:j+mask_size-1]
+            hist_right=histo(mask)
+            hist_left=histo(img_left[i_pixel_left[0]-1:i_pixel_left[0]+1,i_pixel_left[1]-1:i_pixel_left[1]+1])
+            compHisto(hist_left,hist_right)
+
+            if errhisto<max_errhisto:
+                i_pixel_right=[i,j]
+
 
 if __name__=='__main__':
 
