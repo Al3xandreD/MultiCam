@@ -70,7 +70,7 @@ def knnCorrespondance(img_left,img_right):
 
     good_matches = sorted(good_matches, key=lambda x: x.distance)
     # Dessiner les correspondances sur une nouvelle image
-    img_matches = cv2.drawMatches(img_left, keypoints_left, img_right, keypoints_right, good_matches[:10], None)
+    img_matches = cv2.drawMatches(img_left, keypoints_left, img_right, keypoints_right, good_matches[:100], None)
 
     # Afficher l'image avec les correspondances
     cv2.imshow('Matches', img_matches)
@@ -152,8 +152,8 @@ def newStereoCorrespondance(img_left,img_right, i_pixel_left, f_left, f_right):
             hist_left=histo(img_left[i_pixel_left[0]-1:i_pixel_left[0]+1,i_pixel_left[1]-1:i_pixel_left[1]+1])
             compHisto(hist_left,hist_right)
 
-            if errhisto<max_errhisto:
-                i_pixel_right=[i,j]
+            # if errhisto<max_errhisto:
+            #     i_pixel_right=[i,j]
 
 
 if __name__=='__main__':
@@ -161,15 +161,15 @@ if __name__=='__main__':
     # donner pour image_left le crop de la box de la personne pour la camera maitre
     # donner pour image_droite la frame de la camera esclave
 
-    img_left=cv2.imread('IMG_2466.jpg', 0)
-    img_right=cv2.imread('IMG_2467.jpg', 0)
+    img_left=cv2.imread('checkboard_left.jpg', 0)
+    img_right=cv2.imread('checkboard_right.jpg', 0)
 
     hist_left=histo(img_left)
     hist_right=histo(img_right)
     erreur=compHisto(hist_left, hist_right)
     print(erreur)
 
-    #knnCorrespondance(cleaning(img_left,3), cleaning(img_right,3))
+    knnCorrespondance(cleaning(img_left,3), cleaning(img_right,3))
     #flannMatching(img_left,img_right)
 
     # TODO: se baser sur vitesse, orietation, histogramme de niveau de gris

@@ -80,7 +80,7 @@
       <recent name="C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam_Git\2_PC Server (Image Processing)\Application PC\posedetection" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.python hpc/run/run.py -v video -w write_name -c -p -g -d">
     <configuration name="python hpc/run/run.py -v video -w write_name -c -p -g -d" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MultiCam_Git" />
       <option name="ENV_FILES" value="" />
@@ -165,6 +165,8 @@
       <workItem from="1712574167816" duration="2051000" />
       <workItem from="1712643535727" duration="7541000" />
       <workItem from="1712663061772" duration="6639000" />
+      <workItem from="1713087485428" duration="12335000" />
+      <workItem from="1713162499339" duration="602000" />
     </task>
     <task id="LOCAL-00001" summary="restruct2">
       <option name="closed" value="true" />
@@ -294,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712071812890</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="ajout de la correspondance par compraison de divers parametres">
+      <option name="closed" value="true" />
+      <created>1713087685319</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1713087685319</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,7 +349,7 @@
     <SUITE FILE_PATH="coverage/MultiCam_Git$web_scrapper.coverage" NAME="web_scrapper Coverage Results" MODIFIED="1709914603936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Auto_dataset_tools" />
     <SUITE FILE_PATH="coverage/MultiCam_Git$detect.coverage" NAME="detect Coverage Results" MODIFIED="1709904827943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training" />
     <SUITE FILE_PATH="coverage/MultiCam$python_hpc_run_run_py__v_video__w_write_name__c__p__g__d.coverage" NAME="python hpc/run/run.py -v video -w write_name -c -p -g -d Coverage Results" MODIFIED="1712647632767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master" />
-    <SUITE FILE_PATH="coverage/MultiCam$MultiviewHomogenous.coverage" NAME="MultiviewHomogenous Coverage Results" MODIFIED="1712671403120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Multiview" />
+    <SUITE FILE_PATH="coverage/MultiCam$MultiviewHomogenous.coverage" NAME="MultiviewHomogenous Coverage Results" MODIFIED="1713127466316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Multiview" />
     <SUITE FILE_PATH="coverage/MultiCam_Git$auto_labeling.coverage" NAME="auto_labeling Coverage Results" MODIFIED="1709909776748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training" />
     <SUITE FILE_PATH="coverage/MultiCam_Git$run.coverage" NAME="run Coverage Results" MODIFIED="1709915982947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/run" />
     <SUITE FILE_PATH="coverage/MultiCam_Git$poseclassifier.coverage" NAME="poseclassifier Coverage Results" MODIFIED="1709848251978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC/poseclassification" />
@@ -348,6 +358,6 @@
     <SUITE FILE_PATH="coverage/MultiCam_Git$autolabeling.coverage" NAME="autolabeling Coverage Results" MODIFIED="1709908953750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training" />
     <SUITE FILE_PATH="coverage/MultiCam_Git$.coverage" NAME=" Coverage Results" MODIFIED="1709833867016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC" />
     <SUITE FILE_PATH="coverage/MultiCam_Git$binary_dataset_composer.coverage" NAME="binary_dataset_composer Coverage Results" MODIFIED="1709913374931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Auto_dataset_tools" />
-    <SUITE FILE_PATH="coverage/MultiCam$stereoscopiqueCorrespondance.coverage" NAME="stereoscopiqueCorrespondance Coverage Results" MODIFIED="1712245848434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Multiview" />
+    <SUITE FILE_PATH="coverage/MultiCam$stereoscopiqueCorrespondance.coverage" NAME="stereoscopiqueCorrespondance Coverage Results" MODIFIED="1713123521041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Multiview" />
   </component>
 </project>
