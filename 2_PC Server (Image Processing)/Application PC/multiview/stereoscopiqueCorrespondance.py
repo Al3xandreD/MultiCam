@@ -159,8 +159,8 @@ if __name__=='__main__':
     # donner pour image_left le crop de la box de la personne pour la camera maitre
     # donner pour image_droite la frame de la camera esclave
 
-    img_left=cv2.imread('../RnD/Computer Vision/Multiview/checkboard_left.jpg', 0)
-    img_right=cv2.imread('../RnD/Computer Vision/Multiview/checkboard_right.jpg', 0)
+    img_left=cv2.imread('../../RnD/Computer Vision/Multiview/checkboard_left.jpg', 0)
+    img_right=cv2.imread('../../RnD/Computer Vision/Multiview/checkboard_right.jpg', 0)
 
     hist_left=histo(img_left)
     hist_right=histo(img_right)

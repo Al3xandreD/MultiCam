@@ -1,16 +1,15 @@
 import numpy as np
-import MultiviewHomogenous as mh
-import cv2
-import scipy
-from codeRayan import UrlCamera
+from camera import GenericCamera
 
 
-class Camera(UrlCamera):
-    def __init__(self, status, l_points, source):
+class CameraF(GenericCamera):
+    """
+    Camera class extending UrlCamera to add support for epipolar geometry
+    """
+    def __init__(self, status, source):
 
         # variable relative à l'initialisation des caméras
         super().__init__(source)
-        self.l_points=l_points  # liste point cam1 pour 8points algorithm
 
         # variables relatives à la structure de la paire
         self.status=status
