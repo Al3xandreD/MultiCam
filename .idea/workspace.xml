@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="115edcb2-4d67-468e-80f9-0a2f3770f222" name="Changes" comment="Test resolution probleme calcul F" />
+    <list default="true" id="115edcb2-4d67-468e-80f9-0a2f3770f222" name="Changes" comment="add files for Rnd">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC/core_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC/core_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC/multiview/BiCamera.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC/multiview/BiCamera.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC/multiview/CameraSync.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC/CameraSync.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC/multiview/MultiviewHomogenous.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC/multiview/MultiviewHomogenous.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Multiview/MultiviewHomogenousRnD.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Multiview/MultiviewHomogenousRnD.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,6 +78,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.MultiviewHomogenous.executor": "Run",
+    "Python.MultiviewHomogenousRnD.executor": "Run",
     "Python.drawingBoxes.executor": "Run",
     "Python.python hpc/run/run.py -v video -w write_name -c -p -g -d.executor": "Run",
     "Python.stereoscopiqueCorrespondance.executor": "Run",
@@ -97,11 +105,11 @@
       <recent name="C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam_Git\2_PC Server (Image Processing)\Application PC\poseestimation\weights" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC/multiview" />
       <recent name="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC" />
+      <recent name="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Multiview" />
+      <recent name="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC/multiview" />
       <recent name="$PROJECT_DIR$/2_PC Server (Image Processing)" />
       <recent name="C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam_Git\2_PC Server (Image Processing)\Application PC\poseestimation\weights" />
-      <recent name="C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam_Git\2_PC Server (Image Processing)\Application PC\poseestimation" />
     </key>
   </component>
   <component name="RunManager">
@@ -308,7 +316,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713381251417</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add files for Rnd">
+      <option name="closed" value="true" />
+      <created>1713381743301</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1713381743301</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,7 +356,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="restruct2" />
     <MESSAGE value="Test resolution probleme calcul F" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test resolution probleme calcul F" />
+    <MESSAGE value="add files for Rnd" />
+    <option name="LAST_COMMIT_MESSAGE" value="add files for Rnd" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MultiCam_Git$general.coverage" NAME="general Coverage Results" MODIFIED="1709847343425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC/ml_imageprocess_utils" />
@@ -359,6 +376,7 @@
     <SUITE FILE_PATH="coverage/MultiCam_Git$preprocess.coverage" NAME="preprocess Coverage Results" MODIFIED="1710837949763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Rnd/HPC-master/hpc/core" />
     <SUITE FILE_PATH="coverage/MultiCam_Git$google_image_scraping.coverage" NAME="google-image-scraping Coverage Results" MODIFIED="1709915629381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Auto_dataset_tools/google-image-scrapping-master" />
     <SUITE FILE_PATH="coverage/MultiCam_Git$autolabeling.coverage" NAME="autolabeling Coverage Results" MODIFIED="1709908953750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training" />
+    <SUITE FILE_PATH="coverage/MultiCam$MultiviewHomogenousRnD.coverage" NAME="MultiviewHomogenousRnD Coverage Results" MODIFIED="1713385718076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Multiview" />
     <SUITE FILE_PATH="coverage/MultiCam_Git$.coverage" NAME=" Coverage Results" MODIFIED="1709833867016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC" />
     <SUITE FILE_PATH="coverage/MultiCam_Git$binary_dataset_composer.coverage" NAME="binary_dataset_composer Coverage Results" MODIFIED="1709913374931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Auto_dataset_tools" />
     <SUITE FILE_PATH="coverage/MultiCam$stereoscopiqueCorrespondance.coverage" NAME="stereoscopiqueCorrespondance Coverage Results" MODIFIED="1713361921861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Multiview" />

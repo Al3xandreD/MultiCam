@@ -9,10 +9,12 @@ import time
 
 from utils.plots import colors, plot_one_box_kpt, plot_human
 from camera import GenericCamera
+from CameraSync import Camera
 from poseestimation.poseestimator import PoseEstimator
 from poseclassification.poseclassifier import SymbolicPoseClassifier
 from poseclassification.humanExtractor import HumanExtractor
 from mathutils.vectors import*
+from multiview.BiCamera import BiCamera
 
 
 from network.localnetwork import *
@@ -133,10 +135,19 @@ class Main:
                 rot_angles[3] = 0
 
                 for i, url in enumerate(self.urls):
-                    camera = GenericCamera(url, rot_angle=rot_angles[i],
-                                           source_is_auto_refresh=(IPCAMS_DATABASE_STARTCOL == 4))
-                    camera.start()
+                    camera=Camera(url, rot_angles[i],(IPCAMS_DATABASE_STARTCOL == 4) )
                     self.cameras.append(camera)
+
+                for k in range(0,len(self.cameras),2):
+                    camera1 = self.cameras[k]
+                    camera1.status="master"
+                    camera1.check_status()  # assignating the camera matrix
+                    camera2 = self.cameras[k+1]
+                    camera2.status="slave"
+                    camera2.check_status()
+                    myHandler=BiCamera(camera1, camera2)
+                    myHandler.init()
+
 
             if source == 0:
                 camera = GenericCamera(0, rot_angle=0)

@@ -552,35 +552,33 @@ if __name__=='__main__':
     l_normalized_test_prime, _ = normalisation(l_points_test_prime)
     A_test=computeAbis(l_normalized_test, l_normalized_test_prime)
     F_test=fundamentalMatrixSvd(A_test,Transfo)
-    print("F mano: ", F_test)
+    #print("F mano: ", F_test)
 
-    A_not_normalized=computeAbis(l_points_test, l_points_test_prime)
-    F_not_normalized=fundamentalMatrixNotNormalized(A_not_normalized)
-    print("F not normalized: ", F_not_normalized)
+    # A_not_normalized=computeAbis(l_points_test, l_points_test_prime)
+    # F_not_normalized=fundamentalMatrixNotNormalized(A_not_normalized)
+    # print("F not normalized: ", F_not_normalized)
+    e=computeFirstEpipole(F)
+    e_prime=computeSecondEpipole(F)
+    P = np.hstack((np.eye(3), np.zeros((3, 1))))
+    P_prime=computePfromF(F, e, e_prime)
+    print("P' selon mano", P_prime)
 
-    # les valeurs obtenues pour F sont différentes
-    e_test=computeFirstEpipole(F)
-    e_test_prime=computeSecondEpipole(F)
-    P_test = np.hstack((np.eye(3), np.zeros((3, 1))))  # camera matrix of the first camera, identity
-    P_test_prime = computePfromF(F_test, e_test, e_test_prime)
-    print("P' mano: ", P_test_prime)
-
-    P_test_vs_opencv=computePfromF(F, e_test, e_test_prime)
-    print("P' calculé par fonction maison et F issue d'opencv", P_test_vs_opencv)
+    P_RT = mtx1 @ P
 
     P_RT_prime=mtx2@np.concatenate([R, T], axis=-1)
     print("P' selon R,T", P_RT_prime)
 
-    P_RT=mtx1@P_test
 
+    # point de triangulation
     point1_test=np.array([[1529.51], [1319.47]])
     point2_test=np.array([[1706.79], [1374.03]])
 
-    X_test = point_triangulation(point1_test, point2_test, P_test, P_test_prime)
+    X_test = point_triangulation(point1_test, point2_test, P, P_prime)
     X_test=X_test/X_test[0][-1]
     print("X pour triangulation mano: ",X_test)
 
     X_opencv=point_triangulation(point1_test, point2_test, P_RT, P_RT_prime)
+    X_opencv=X_opencv/X_opencv[0][-1]
     print("X triangulation opencv: ",X_opencv)
 
     
