@@ -15,14 +15,7 @@
         android:theme="@style/Theme.Final_App"
         tools:targetApi="31">
         <activity
-            android:name=".Activity3"
-            android:exported="false" />
-        <activity
-            android:name=".Activity2"
-            android:exported="false"
-            android:screenOrientation="landscape" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".Splashscreen"
             android:exported="true"
             android:screenOrientation="landscape">
             <intent-filter>
@@ -31,6 +24,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ActivityCamera"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMap"
+            android:exported="false" />
+        <activity
+            android:name=".Activity2"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="landscape">
+        </activity>
     </application>
 
 </manifest>
+
+<!--<activity android:name=".MainActivity5"-->
+<!--android:exported="false"-->
+<!--android:screenOrientation="landscape"/>-->

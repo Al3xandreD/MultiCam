@@ -11,13 +11,23 @@ from models.experimental import attempt_load
 from utils.general import non_max_suppression_kpt, strip_optimizer
 from utils.plots import output_to_keypoint
 from numpy import linalg as la
+from mathutils.vectors import*
 
 """This class permit to classify a pose (associate a given pose to a known posture label)"""
+
+
+# Keypoints structure : tensor[x_coord0, y_coord0, conf0,  x_coord1, y_coord1, conf1, ...]
 
 
 # Symbolic approach :
 class SymbolicPoseClassifier:
     def __init__(self, labels_matrix=None, thresholds_matrix=None, pose_buffer_size=5):
+
+
+        self.correl = torch.zeros((1, 1), device='cuda')
+
+
+        self.old_kpts = None
 
         self.ticks = 0
         self.pose_buffer_size = pose_buffer_size
@@ -30,6 +40,7 @@ class SymbolicPoseClassifier:
              [[0, 0], [0, 0], [20, inf], [60, 0], [3, inf]],
              ])
 
+        # Measures / Observations
         self.xyxy_buff = []
         self.kpts_buff = []
         self.w_h_ratio = -1
@@ -39,7 +50,9 @@ class SymbolicPoseClassifier:
         self.idle_time = -1
         self.acceleration = 0
         self.avg_acceleration = -1
-        self.labels = ["unused", "dynamique", "immobile", "choc"]
+        self.kpts_xy_speeds = None
+
+        self.labels = ["non-determiné", "dynamique", "immobile", "choc"]
 
     def compare(self, measures_vec, thresholds_mat):
         # TODO : improve decision
@@ -85,7 +98,7 @@ class SymbolicPoseClassifier:
         steps = 3
         num_kpts = len(kpts) // steps
         # arr = self.kpts_buff[0].detach().cpu().numpy()
-        kpts_xy_speeds = torch.zeros_like(self.kpts_buff[0].unfold(0, 2, 1)[::steps])
+        self.kpts_xy_speeds = torch.zeros_like(self.kpts_buff[0].unfold(0, 2, 1)[::steps])
 
         # TODO optimize calculus :
 
@@ -100,17 +113,17 @@ class SymbolicPoseClassifier:
                 # Get Limbs/Keypoints speed
                 curr_kpts = self.kpts_buff[i].unfold(0, 2, 1)[::steps]
                 old_kpts = self.kpts_buff[i - 1].unfold(0, 2, 1)[::steps]
-                kpts_xy_speeds += abs(curr_kpts - old_kpts)
+                self.kpts_xy_speeds += abs(curr_kpts - old_kpts)
 
             speed /= self.pose_buffer_size * dt
             self.global_abs_speed = la.norm(speed)
-            print(self.last_not_zero_speed)
+            print("Last non-zero speed", self.last_not_zero_speed)
 
-            kpts_xy_speeds /= self.pose_buffer_size * dt
-            self.kpts_speeds_norms = torch.norm(kpts_xy_speeds, dim=1)
+            self.kpts_xy_speeds /= self.pose_buffer_size * dt
+            self.kpts_speeds_norms = torch.norm(self.kpts_xy_speeds, dim=1)
             # print(kpts_speeds_norm)
             self.kpts_xy_avg_speed = self.kpts_speeds_norms.mean()
-            # print(kpts_xy_avg_speed)
+            print("Average keypoints speed", self.kpts_xy_avg_speed)
 
             # Get bbox global acceleration
             acceleration = (self.global_abs_speed - old_speed) / dt
@@ -120,7 +133,8 @@ class SymbolicPoseClassifier:
             # Get bbox global avg acceleration
             n = self.ticks - self.pose_buffer_size + 1
             self.avg_acceleration = ((n - 1) * self.avg_acceleration + acceleration) / n
-            print(self.acceleration)
+            print("Acceleration", self.avg_acceleration)
+
 
         # Get Idle time
         idle_speed_thres = 15
@@ -130,9 +144,8 @@ class SymbolicPoseClassifier:
             self.last_not_zero_speed = self.global_abs_speed
             self.last_time_not_zero_speed = time.time()
             self.idle_time = 0
-        # print(f'idle time:{self.idle_time:2f}')
+        print(f'idle time:{self.idle_time:2f}')
 
-        # Get global score
 
         return np.array([self.w_h_ratio, self.global_abs_speed, self.last_not_zero_speed, self.acceleration, self.idle_time])
 
@@ -150,6 +163,8 @@ class SymbolicPoseClassifier:
 
     def symbolic_classify(self, detection_results):
 
+        euclid_dist = torch.zeros((1, 1), device='cuda')
+
         try:
             # Extract pose keypoints
             for i, pose in enumerate(
@@ -163,13 +178,23 @@ class SymbolicPoseClassifier:
                     for det_index, (*xyxy, conf, cls) in enumerate(
                             reversed(pose[:, :6])):  # loop over poses for drawing on frame
                         kpts = pose[det_index, 6:]
+                        if self.old_kpts is not None:
+                            euclid_dist = euclidean_distance(kpts, self.old_kpts)
+                            self.correl = correlation(kpts, self.old_kpts)
+
+                            print("euclidean_distance : " + str(euclid_dist))
+                            print("correlation : " + str(self.correl))
+
+
+
+                        self.old_kpts = kpts
 
                         # Classify pose
                         self.symbolic_classify_core(xyxy, kpts, conf, pose_buffer_size=self.pose_buffer_size)
         except Exception as e:
             print(f"An error occurred: {e}")
 
-        return 1
+        return euclid_dist, self.correl
 
 
 # Machine Learning approach :

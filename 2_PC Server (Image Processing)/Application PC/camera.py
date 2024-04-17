@@ -51,7 +51,7 @@ class GenericCamera:
     def __init__(self, source, source_is_auto_refresh=False, pair_cam=None, is_ref=False, no_frame_timeout=1,
                  frame_time=0, frames_skip=0,
                  frame_width=W_DEFAULT,
-                 frame_height=H_DEFAULT, channels_count=3, flip_code=2, rot_angle=1, ):
+                 frame_height=H_DEFAULT, channels_count=3, flip_code=2, rot_angle=1):
         """
 
         0: Flip vertically(upside down).
@@ -76,6 +76,7 @@ class GenericCamera:
                          self.rot_angle), 64)
         self.source_is_auto_refresh = source_is_auto_refresh
         self.idle_frame = self.output_frame
+        self.max_frames = -1
         self.is_webcam = False
         self.webcam = None
 
@@ -112,6 +113,10 @@ class GenericCamera:
                         print(f'failed to open cam n°{0:d}')
 
                 if not self.success:
+                    if self.max_frames != -1:
+                        if self.webcam.get(cv2.CAP_PROP_FRAME_COUNT) >= self.max_frames:
+                            self.webcam.set(cv2.CAP_PROP_POS_FRAMES, 0)
+
                     """
                     If no frame is delivered within timeout return grid screen
 
@@ -129,13 +134,19 @@ class GenericCamera:
                 # Apply transforms corrections and update output frame if not null
                 if frame_cv is not None:
                     self.output_frame = self.__apply_transform(frame_cv)
-                time.sleep(self.frame_time)  # wait time
+                delta_time = time.time() - last_success_frame_time_capture
+
+                time.sleep(self.frame_time * (delta_time < self.frame_time))  # wait time
 
     ########## Prepare and start camera thread #########
     def start(self):
         if type(self.source) == int or self.source_is_auto_refresh:
             self.is_webcam = True
             self.webcam = cv2.VideoCapture(self.source)
+
+        if type(self.source) == str:
+            if self.source.endswith(".mp4"):
+                self.max_frames = self.webcam.get(cv2.CAP_PROP_FRAME_COUNT)
         thread = Thread(target=self.update, args=([self.source]), daemon=True)
         thread.start()
 
@@ -143,7 +154,6 @@ class GenericCamera:
         self.started = False
         if self.is_webcam:
             self.webcam.release()
-
 
     def read(self):
         return self.success, self.output_frame

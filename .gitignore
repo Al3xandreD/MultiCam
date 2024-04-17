@@ -11,9 +11,16 @@
 *.pt
 *.pb
 
+
 # Training #
 /2_PC Server (Image Processing)/RnD/Computer Vision/Training/Fireman/dataset
 /2_PC Server (Image Processing)/RnD/Computer Vision/Training/Fireman/MultiCamTraining
+*.npz
+
+
+
+
+
 
 
 # Packages #

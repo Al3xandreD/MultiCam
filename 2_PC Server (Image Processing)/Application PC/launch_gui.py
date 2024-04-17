@@ -106,6 +106,12 @@ class Ui_MainWindow(object):
         self.cameras_settings_source_cbox = QtWidgets.QComboBox()
         self.cameras_settings_source_cbox.addItem("Webcam")
         self.cameras_settings_source_cbox.addItem("Multicam")
+        self.cameras_settings_source_cbox.addItem("Video 0")
+        self.cameras_settings_source_cbox.addItem("Video 1")
+        self.cameras_settings_source_cbox.addItem("Video 2")
+        self.cameras_settings_source_cbox.addItem("Video 3")
+        self.cameras_settings_source_cbox.addItem("Video 3")
+
         self.cameras_settings_source_cbox.sizeAdjustPolicy()
         self.cameras_settings_source_cbox.currentIndexChanged.connect(self.set_source)
         self.cameras_settings_container.addItem(self.cameras_settings_source_cbox)
@@ -200,10 +206,18 @@ class Ui_MainWindow(object):
         self.blur_value_now = 0  # Updated blur value
         self.fps = 0
         self.started = False
+        self.init()
+
+
+    def init(self):
+        # TODO Init all needed here
+        pass
 
     def set_source(self):
-        self.opt.source = f"{self.cameras_settings_source_cbox.currentIndex():d}"
-        print(f"Source choice: {self.opt.source:s}")
+        source = self.cameras_settings_source_cbox.currentIndex()
+        if source > 1:
+            self.opt.source = "video" + str(source-2) + ".mp4"
+            print(f"Source choice: {self.opt.source:s}")
 
     def set_computing_device(self):
         choice = self.cpu_gpu_radiobtns.current_index
@@ -248,13 +262,14 @@ class Ui_MainWindow(object):
             and update and draw them on camera views
         """
         ############# Get options from GUI Start Menu ################
-
-        #############################################################
         self.main_app = Main(self.opt)
+        #############################################################
+
         self.network_settings_ssid.setText(f"SSID : {self.main_app.lan_ssid:s}")
         self.network_settings_ssid.setSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
         self.network_settings_container.updateSizeWrapping()
 
+        # Instantiate cameras
         cameras = self.main_app.cameras  # TODO Replace with a result output member of Main() class
         self.camviews = [None for i in range(len(cameras))]
 

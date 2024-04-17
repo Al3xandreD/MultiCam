@@ -1,23 +1,26 @@
 # MultiCam
-# Logiciel PC
 
-Cette partie du projet MultiCam
-
+[Google](https://google.com)
+[Example PDF](PDFs/example.pdf)
 ## Arborescence du Projet
 
-```plaintext
-.
-├── docs           # Documentation du projet
-│   ├── api        # Documentation de l'API
-│   └── user-guide # Guide de l'utilisateur
-├── src            # Code source principal
-│   ├── app        # Modules principaux de l'application
-│   ├── lib        # Bibliothèques et utilitaires personnalisés
-│   └── tests      # Tests unitaires
-├── data           # Fichiers de données nécessaires au projet
-├── scripts        # Scripts utiles pour le déploiement ou l'automatisation
-├── .gitignore     # Fichiers et dossiers à ignorer lors du suivi Git
-├── LICENSE        # Licence du projet
-└── README.md      # Documentation principale du projet (ce fichier)
+[PC Server Readme](2_PC%20Server%20%28Image%20Processing%29/README.md) pour plus de détails sur l'API du projet.
 
-Consultez [a relative link](2_PC Server (Image Processing)/README.md) pour plus de détails sur l'API du projet.
+
+## Arborescence du Projet
+## Arborescence du Projet
+```plaintext
+├── #Common Resources
+├── 1_ESP32 Cam
+│     ├── ESP32_Cam_auto
+│     └── ESP32_Cam_noAuto
+├── 2_PC Server (Image Processing)
+│     ├── Application PC
+│     └── RnD
+├── 3_Android App
+│     ├── app
+│     └── gradle
+└── _Project Management
+│           ├── Autoévaluations
+│           ├── Commandes et matériel
+│           └── Rapports

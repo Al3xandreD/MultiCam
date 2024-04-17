@@ -94,9 +94,9 @@ full body  : solid line
 You will notice that successful detections containing the target do
 not sit tightly on the body but also include some of the background
 left and right.  This is not a bug but accurately reflects the
-employed training data which also includes portions of the background
+employed training dataF which also includes portions of the background
 to ensure proper silhouette representation. If you want to get a
-feeling for the training data check out the CBCL data set:
+feeling for the training dataF check out the CBCL dataF set:
 http://www.ai.mit.edu/projects/cbcl/software-datasets/PedestrianData.html
 
 There is also a small number of false alarms in this sequence.  

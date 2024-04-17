@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="115edcb2-4d67-468e-80f9-0a2f3770f222" name="Changes" comment="Test resolution probleme calcul F">
       <change afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC/mainLaunch.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Multiview/stereoscopiqueCorrespondance.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Multiview/stereoscopiqueCorrespondance.py" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +56,10 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+
     &quot;git-widget-placeholder&quot;: &quot;Alexandre2&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/STIC/MultiCam/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Auto_dataset_tools&quot;,
+
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -67,6 +71,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+
       <recent name="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Auto_dataset_tools" />
       <recent name="C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam_Git\2_PC Server (Image Processing)\RnD\Computer Vision\Human pose classification methods\Sample reference\HPC-master\hpc\run" />
       <recent name="C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam_Git\2_PC Server (Image Processing)\RnD\Computer Vision\Trains" />
@@ -79,6 +84,7 @@
       <recent name="C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam_Git\2_PC Server (Image Processing)\Application PC\poseestimation\weights" />
       <recent name="C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam_Git\2_PC Server (Image Processing)\Application PC\poseestimation" />
       <recent name="C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam_Git\2_PC Server (Image Processing)\Application PC\ml_imageprocess_utils" />
+
     </key>
   </component>
   <component name="RunManager">
@@ -150,6 +156,7 @@
       <workItem from="1709917840691" duration="499000" />
       <workItem from="1710048767285" duration="118000" />
       <workItem from="1710048918703" duration="10000" />
+
       <workItem from="1710241658706" duration="515000" />
       <workItem from="1710242189371" duration="6658000" />
       <workItem from="1710279610044" duration="599000" />
@@ -172,6 +179,7 @@
       <workItem from="1713213893872" duration="99000" />
       <workItem from="1713248321698" duration="3200000" />
       <workItem from="1713352665223" duration="9546000" />
+
     </task>
     <task id="LOCAL-00001" summary="restruct2">
       <option name="closed" value="true" />
@@ -231,101 +239,32 @@
     </task>
     <task id="LOCAL-00008" summary="restruct2">
       <option name="closed" value="true" />
-      <created>1710241694881</created>
+
+
+      <created>1710049193692</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1710241694881</updated>
+      <updated>1710049193692</updated>
     </task>
-    <task id="LOCAL-00009" summary="restruct2">
+    <task id="LOCAL-00009" summary="auto_labeling.py">
       <option name="closed" value="true" />
-      <created>1710250833860</created>
+      <created>1710233688630</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1710250833860</updated>
+      <updated>1710233688630</updated>
     </task>
-    <task id="LOCAL-00010" summary="update">
+    <task id="LOCAL-00010" summary="added readme files">
       <option name="closed" value="true" />
-      <created>1710250848416</created>
+      <created>1710236462694</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1710250848416</updated>
+      <updated>1710236462694</updated>
     </task>
-    <task id="LOCAL-00011" summary="update multiview et camera">
-      <option name="closed" value="true" />
-      <created>1710253598338</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1710253598338</updated>
-    </task>
-    <task id="LOCAL-00012" summary="update for retraining">
-      <option name="closed" value="true" />
-      <created>1710833988503</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1710833988503</updated>
-    </task>
-    <task id="LOCAL-00013" summary="update for retraining">
-      <option name="closed" value="true" />
-      <created>1712049783273</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1712049783273</updated>
-    </task>
-    <task id="LOCAL-00014" summary="ajout de la correspondance stereoscopique">
-      <option name="closed" value="true" />
-      <created>1712063164123</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1712063164123</updated>
-    </task>
-    <task id="LOCAL-00015" summary="ajout de la correspondance par compraison de divers parametres">
-      <option name="closed" value="true" />
-      <created>1712071802493</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1712071802493</updated>
-    </task>
-    <task id="LOCAL-00016" summary="ajout de la correspondance par compraison de divers parametres">
-      <option name="closed" value="true" />
-      <created>1712071812890</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1712071812890</updated>
-    </task>
-    <task id="LOCAL-00017" summary="ajout de la correspondance par compraison de divers parametres">
-      <option name="closed" value="true" />
-      <created>1713087685319</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1713087685319</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Test de F sur echiquier">
-      <option name="closed" value="true" />
-      <created>1713163442307</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1713163442307</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Test resolution probleme calcul F">
-      <option name="closed" value="true" />
-      <created>1713248376315</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1713248376315</updated>
-    </task>
-    <option name="localTasksCounter" value="20" />
+    <option name="localTasksCounter" value="11" />
+
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,14 +295,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="restruct2" />
-    <MESSAGE value="update" />
-    <MESSAGE value="update multiview et camera" />
-    <MESSAGE value="update for retraining" />
-    <MESSAGE value="ajout de la correspondance stereoscopique" />
-    <MESSAGE value="ajout de la correspondance par compraison de divers parametres" />
-    <MESSAGE value="Test de F sur echiquier" />
-    <MESSAGE value="Test resolution probleme calcul F" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test resolution probleme calcul F" />
+
+   
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MultiCam_Git$general.coverage" NAME="general Coverage Results" MODIFIED="1709847343425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC/ml_imageprocess_utils" />
@@ -377,6 +310,25 @@
     <SUITE FILE_PATH="coverage/MultiCam_Git$run.coverage" NAME="run Coverage Results" MODIFIED="1709915982947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master/hpc/run" />
     <SUITE FILE_PATH="coverage/MultiCam_Git$poseclassifier.coverage" NAME="poseclassifier Coverage Results" MODIFIED="1709848251978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC/poseclassification" />
     <SUITE FILE_PATH="coverage/MultiCam$drawingBoxes.coverage" NAME="drawingBoxes Coverage Results" MODIFIED="1713213724857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Auto_dataset_tools" />
+
+    <MESSAGE value="auto_labeling.py" />
+    <MESSAGE value="added readme files" />
+    <option name="LAST_COMMIT_MESSAGE" value="added readme files" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MultiCam_Git$web_scrapper.coverage" NAME="web_scrapper Coverage Results" MODIFIED="1709914603936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Auto_dataset_tools" />
+    <SUITE FILE_PATH="coverage/MultiCam_Git$general.coverage" NAME="general Coverage Results" MODIFIED="1709847343425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC/ml_imageprocess_utils" />
+    <SUITE FILE_PATH="coverage/MultiCam_Git$auto_labeling.coverage" NAME="auto_labeling Coverage Results" MODIFIED="1710232986978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Auto_dataset_tools" />
+    <SUITE FILE_PATH="coverage/MultiCam_Git$python_hpc_run_run_py__v_video__w_write_name__c__p__g__d.coverage" NAME="python hpc/run/run.py -v video -w write_name -c -p -g -d Coverage Results" MODIFIED="1710836069044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Sample reference/HPC-master" />
+    <SUITE FILE_PATH="coverage/MultiCam_Git$detect.coverage" NAME="detect Coverage Results" MODIFIED="1709904827943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training" />
+    <SUITE FILE_PATH="coverage/MultiCam_Git$preprocess.coverage" NAME="preprocess Coverage Results" MODIFIED="1710837949763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Rnd/HPC-master/hpc/core" />
+    <SUITE FILE_PATH="coverage/MultiCam_Git$poseclassifier.coverage" NAME="poseclassifier Coverage Results" MODIFIED="1709848251978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC/poseclassification" />
+    <SUITE FILE_PATH="coverage/MultiCam_Git$binary_dataset_composer.coverage" NAME="binary_dataset_composer Coverage Results" MODIFIED="1709913374931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Auto_dataset_tools" />
+    <SUITE FILE_PATH="coverage/MultiCam_Git$camera.coverage" NAME="camera Coverage Results" MODIFIED="1710836921946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Rnd/HPC-master/hpc/run" />
+    <SUITE FILE_PATH="coverage/MultiCam_Git$.coverage" NAME=" Coverage Results" MODIFIED="1709833867016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC" />
+    <SUITE FILE_PATH="coverage/MultiCam_Git$run.coverage" NAME="run Coverage Results" MODIFIED="1710841653287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Human pose classification methods/Rnd" />
+    <SUITE FILE_PATH="coverage/MultiCam_Git$launch_gui.coverage" NAME="launch_gui Coverage Results" MODIFIED="1711992905112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC" />
+    <SUITE FILE_PATH="coverage/MultiCam_Git$core_app.coverage" NAME="core_app Coverage Results" MODIFIED="1711992314031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC" />
     <SUITE FILE_PATH="coverage/MultiCam_Git$google_image_scraping.coverage" NAME="google-image-scraping Coverage Results" MODIFIED="1709915629381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Auto_dataset_tools/google-image-scrapping-master" />
     <SUITE FILE_PATH="coverage/MultiCam_Git$autolabeling.coverage" NAME="autolabeling Coverage Results" MODIFIED="1709908953750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/RnD/Computer Vision/Training" />
     <SUITE FILE_PATH="coverage/MultiCam_Git$.coverage" NAME=" Coverage Results" MODIFIED="1709833867016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC" />

@@ -58,6 +58,36 @@ def plot_one_box_kpt(x, im, color=None, label=None, line_thickness=3, kpt_label=
     if kpt_label:
         plot_skeleton_kpts(im, kpts, steps, orig_shape=orig_shape)
 
+
+def plot_human(human, im, color=None, state_text = "Normal", label=None, infos=False, line_thickness=3, kpt_label=False, steps=2, orig_shape=None):
+
+    kpts = human.get_pose()
+    x = human.bbox
+
+    # Plots one bounding box on image 'im' using OpenCV
+    assert im.data.contiguous, 'Image not contiguous. Apply np.ascontiguousarray(im) to plot_on_box() input image.'
+    tl = line_thickness or round(0.002 * (im.shape[0] + im.shape[1]) / 2) + 1  # line/font thickness
+    color = color or [random.randint(0, 255) for _ in range(3)]
+    c1, c2 = (int(x[0]), int(x[1])), (int(x[2]), int(x[3]))
+    cv2.rectangle(im, c1, c2, (255, 0, 0), thickness=tl*1//3, lineType=cv2.LINE_AA)
+
+    plot_label(label, im, c1, tl, color)
+    if infos:
+        plot_label(f"Etat : {state_text:s}", im, (c2[0], c1[1]+60), 8, color)
+        plot_label(f"Vitesse membres (moy) : {float(human.kpts_xy_avg_speed) : .2f}", im, (c2[0], c1[1]+100), 6, color)
+        plot_label(f"acceleration : {float(human.acceleration) : .2f}", im, (c2[0], c1[1]+140), 6, color)
+
+    if kpt_label:
+
+        plot_skeleton_kpts(im, kpts, steps, orig_shape=orig_shape)
+
+def plot_label(text, im, origin, tl, color):
+    tf = max(tl - 1, 1)  # font thickness
+    t_size = cv2.getTextSize(text, 0, fontScale=tl / 6, thickness=tf)[0]
+    c2 = origin[0] + t_size[0], origin[1] - t_size[1] - 3
+    cv2.rectangle(im, origin, c2, color, -1, cv2.LINE_AA)  # filled
+    cv2.putText(im, text, (origin[0], origin[1] - 2), 0, tl / 6, [225, 255, 255], thickness=tf // 2, lineType=cv2.LINE_AA)
+
 colors = Colors()  
 
 def color_list():
@@ -351,7 +381,7 @@ def plot_labels(labels, names=(), save_dir=Path(''), loggers=None):
             v.log({"Labels": [v.Image(str(x), caption=x.name) for x in save_dir.glob('*labels*.jpg')]}, commit=False)
 
 
-def plot_evolution(yaml_file='data/hyp.finetune.yaml'):  # from utils.plots import *; plot_evolution()
+def plot_evolution(yaml_file='dataF/hyp.finetune.yaml'):  # from utils.plots import *; plot_evolution()
     # Plot hyperparameter evolution results in evolve.txt
     with open(yaml_file) as f:
         hyp = yaml.load(f, Loader=yaml.SafeLoader)

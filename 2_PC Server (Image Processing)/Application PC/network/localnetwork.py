@@ -12,12 +12,15 @@ def get_current_lan_ssid():
     except Exception as e:
         return -1, "N/A"
 
+def send_to_stream(frame, server):
+    server.send(frame)
 
 class FrameStream:
+
     def __init__(self):
         stream = VideoGear(source='test.mp4').start()  # Open any video stream
-        server = NetGear()  # Define netgear server with default settings
+        self.server = NetGear()  # Define netgear server with default settings
 
 
-def send_to_stream(frame):
-    server.send(frame)
+    def send_to_stream(self,frame):
+        self.server.send(frame)

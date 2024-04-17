@@ -30,9 +30,11 @@ def training(pathTrain, pathData_train, pathWeights):
     :param pathWeights: paths to reference weights
     :return:
     '''
+
     command="python "+"'"+pathTrain+"'" +" --workers 8 --data " + "'"+pathData_train+"'"+" --img 640 640 --cfg cfg/training/yolov7.yaml  --weights "+ "'"+pathWeights+"'"+" --name yolov7 --hyp data/hyp.scratch.p5.yaml"
     command2="python "+"'"+pathTrain+"'"+" --workers 8 --img 640 --epochs 3 --data "+"'"+pathData_train+"'"+" --weights "+ "'"+pathWeights+"'"
     resultTrain = subprocess.run(command, shell=True)
+
 
     print(resultTrain.stdout)
 
@@ -62,8 +64,10 @@ if __name__=='__main__':
     pathDatabase = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/STIC/MultiCam/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Fireman/dataset"
 
     # path for training
+
     pathData_train = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/STIC/MultiCam/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Fireman/MultiCamTraining/data.yaml"
     pathTrain = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/STIC/MultiCam/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Auto_dataset_tools/train.py"
+
 
     # path for executing
     pathBest="resultWeights/best.pt"
