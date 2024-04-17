@@ -1,31 +1,7 @@
 import MultiviewHomogenous as mh
 import numpy as np
-
 import scipy
-from CameraSync import CameraF
 
-# class HandlerCamera(object):
-#     """
-#     Associates a slave and a master camera, used for configuration.
-#     """
-#     def __init__(self, camMaster, camSlave):
-#         self.camMaster = camMaster
-#         self.camSlave=camSlave
-#
-#     def configuration(self):
-#         '''
-#         Cameras configuration according to epipolar geometry.
-#         :return:
-#         '''
-#
-#         self.camMaster.l_points, T = mh.normalisation(self.camMaster.l_points)  # normalizing points
-#         self.camSlave.l_points, _ = mh.normalisation(self.camSlave.l_points)
-#
-#         A = mh.computeAbis(self.camMaster.l_points, self.camSlave.l_points)  # matrix for computing F
-#         F = mh.fundamentalMatrixSvd(A, T)  # fundamental matrix
-#         self.camMaster.e = mh.computeFirstEpipole(F)  # epipole
-#         self.camSlave.e = mh.computeSecondEpipole(F)
-#         self.camSlave.P = mh.computePfromF(F, self.camMaster.e, self.camSlave.e)
 
 class BiCamera(object):
     """

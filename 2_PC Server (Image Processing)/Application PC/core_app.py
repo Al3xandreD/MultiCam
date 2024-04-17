@@ -15,6 +15,7 @@ from poseclassification.poseclassifier import SymbolicPoseClassifier
 from poseclassification.humanExtractor import HumanExtractor
 from mathutils.vectors import*
 from multiview.BiCamera import BiCamera
+from multiview.CamGroup import CamGroup
 
 
 from network.localnetwork import *
@@ -113,6 +114,8 @@ class Main:
 
         ##############  Init cameras video stream ###############
         self.cameras = []
+        self.handlers=[]
+        self.camgroups=[]
 
         if is_number(self.opt.source):
             source = int(self.opt.source)  # 0 : Test with PC webcam / !=0 : Use url cameras
@@ -147,6 +150,8 @@ class Main:
                     camera2.check_status()
                     myHandler=BiCamera(camera1, camera2)
                     myHandler.init()
+                    myHandler.start()
+                    self.handlers.append(myHandler)
 
 
             if source == 0:
@@ -173,6 +178,13 @@ class Main:
         # Deprecated TODO rm
         self.pose_classifier = SymbolicPoseClassifier()
         self.humanExtractor = HumanExtractor(10, 852 - 10, 10, 480 - 10)
+
+        ################# Creating CamGroups ######################
+        for bicam in self.handlers:
+            humanExtractor=HumanExtractor(10, 852 - 10, 10, 480 - 10)
+            camGroup=CamGroup(bicam, humanExtractor)
+            self.camgroups.append(camGroup)
+
 
         global start_time
         start_time = time.time()
