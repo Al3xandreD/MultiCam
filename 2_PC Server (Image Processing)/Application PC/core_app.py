@@ -181,9 +181,27 @@ class Main:
 
         ################# Creating CamGroups ######################
         for bicam in self.handlers:
-            humanExtractor=HumanExtractor(10, 852 - 10, 10, 480 - 10)
-            camGroup=CamGroup(bicam, humanExtractor)
+            humanExtractorLeft=HumanExtractor(10, 852 - 10, 10, 480 - 10)
+            humanExtractorRight=HumanExtractor(10, 852 - 10, 10, 480 - 10)
+
+            camGroup=CamGroup(bicam, humanExtractorLeft, humanExtractorRight)
             self.camgroups.append(camGroup)
+
+        ################# Pose association ##########################
+        for camGroup in self.camgroups:
+            left_frame= None #camGroup.biCam.  # TODO recuperer frame
+            right_frame= None   # TODO recuperer frame
+
+            output_frame_left, raw_results_left, keypoints_left, profiler_left = self.pose_estimator.detect(left_frame)
+            output_frame_right, raw_results_right, keypoints_right, profiler_right = self.pose_estimator.detect(right_frame)
+
+            camGroup.humanExtractorLeft.update_humans(raw_results_left, left_frame)
+            camGroup.humanExtractorRight.update_humans(raw_results_right, right_frame)
+
+        ################# Stereoscopic Correspondance ###############
+
+
+
 
 
         global start_time

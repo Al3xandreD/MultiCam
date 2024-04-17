@@ -1,5 +1,6 @@
 
 class CamGroup(object):
-    def __init__(self, biCam, humanExtractor):
+    def __init__(self, biCam, humanExtractorLeft, humanExtractorRight):
         self.biCam=biCam
-        self.humanExtractor=humanExtractor
+        self.humanExtractorLeft=humanExtractorLeft
+        self.humanExtractorRight=humanExtractorRight
