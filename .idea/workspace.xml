@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="115edcb2-4d67-468e-80f9-0a2f3770f222" name="Changes" comment="Test resolution probleme calcul F">
+      <change beforePath="$PROJECT_DIR$/.idea/MultiCam_Git.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MultiCam_Git.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,17 +25,17 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Alexandre3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Al3xandreD"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Al3xandreD&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubProjectSettings">
     <option name="branchProtectionPatterns">
       <list>
@@ -79,7 +81,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Alexandre2",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/STIC/MultiCam/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Auto_dataset_tools",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -286,7 +288,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713365725710</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Test resolution probleme calcul F">
+      <option name="closed" value="true" />
+      <created>1713366215387</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1713366215387</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +313,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Alexandre2" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
