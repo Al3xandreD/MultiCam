@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="115edcb2-4d67-468e-80f9-0a2f3770f222" name="Changes" comment="Test resolution probleme calcul F">
-      <change beforePath="$PROJECT_DIR$/.idea/MultiCam_Git.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MultiCam_Git.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="115edcb2-4d67-468e-80f9-0a2f3770f222" name="Changes" comment="Test resolution probleme calcul F" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,11 +97,11 @@
       <recent name="C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam_Git\2_PC Server (Image Processing)\Application PC\poseestimation\weights" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC/multiview" />
       <recent name="$PROJECT_DIR$/2_PC Server (Image Processing)/Application PC" />
       <recent name="$PROJECT_DIR$/2_PC Server (Image Processing)" />
       <recent name="C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam_Git\2_PC Server (Image Processing)\Application PC\poseestimation\weights" />
       <recent name="C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam_Git\2_PC Server (Image Processing)\Application PC\poseestimation" />
-      <recent name="C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam_Git\2_PC Server (Image Processing)\Application PC\ml_imageprocess_utils" />
     </key>
   </component>
   <component name="RunManager">
@@ -296,7 +292,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713366215387</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Test resolution probleme calcul F">
+      <option name="closed" value="true" />
+      <created>1713381136560</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1713381136560</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Test resolution probleme calcul F">
+      <option name="closed" value="true" />
+      <created>1713381251417</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1713381251417</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
