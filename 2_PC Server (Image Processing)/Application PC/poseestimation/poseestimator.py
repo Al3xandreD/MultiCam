@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+from mathutils.vectors import*
 import torch
 from torchvision import transforms
 from utils.datasets import letterbox
@@ -10,6 +11,9 @@ from utils.plots import output_to_keypoint
 from profiling.profiling_recorder import ProfilingRecorder
 
 """ Multi Pose Yolo based estimator """
+
+
+# Keypoints structure : tensor[x_coord0, y_coord0, conf0,  x_coord1, y_coord1, conf1, ...]
 
 class PoseEstimator:
 

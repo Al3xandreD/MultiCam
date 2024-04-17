@@ -1,17 +1,21 @@
 # Ref : https://www.bogotobogo.com/python/OpenCV_Python/python_opencv3_Image_Object_Detection_Face_Detection_Haar_Cascade_Classifiers.php
 from os.path import dirname, abspath
 import cv2
+import numpy as np
 import openpyxl
 import argparse
-from utils.plots import colors, plot_one_box_kpt
+import matplotlib.pyplot as plt
+import time
+
+from utils.plots import colors, plot_one_box_kpt, plot_human
 from camera import GenericCamera
 from poseestimation.poseestimator import PoseEstimator
 from poseclassification.poseclassifier import SymbolicPoseClassifier
+from poseclassification.humanExtractor import HumanExtractor
+from mathutils.vectors import*
+
+
 from network.localnetwork import *
-
-
-
-
 
 common_resources_dir = "\#Common Resources"
 root_folder_content_signature = common_resources_dir  # To find root folder automatically
@@ -26,7 +30,7 @@ IPCAMS_DATABASE_STARTCOL = 6
 W_DEFAULT, H_DEFAULT = 800, 600  # 768, 576
 w, h = W_DEFAULT, H_DEFAULT
 
-  
+correls = []
 
 
 def gcd_resize(input_frame, gcd):
@@ -56,16 +60,12 @@ def rotate_image(image, angle):
 
 
 ########### Pose drawer ###############
-def draw_poses(frame, detection_results, names, line_thickness, hide_labels, hide_conf):
-    # frame = frame[0].permute(1, 2, 0) * 255  # Change format [b, c, h, w] to [h, w, c] for displaying the image.
-    # frame = frame.cpu().numpy().astype(np.uint8)
-    # frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)  # reshape image format to (BGR)
-    # gn = torch.tensor(frame.shape)[[1, 0, 1, 0]]  # normalization gain whwh
+def draw_poses(frame, detection_poses_results, names, line_thickness, hide_labels, hide_conf):
     for i, pose in enumerate(
-            detection_results):  # detections per image #TODO To clarify better (seems to be several version of same detection results)
+            detection_poses_results):
 
-        if len(detection_results):  # check if no pose
-            for c in pose[:, 5].unique():  # Print results
+        if len(detection_poses_results):  # check if no pose
+            for c in pose[:, 5].unique():  # Print poses_results
                 n = (pose[:, 5] == c).sum()  # detections per class
                 print("No of Objects in Current Frame : {}".format(n))
 
@@ -84,20 +84,7 @@ def ndarray_info(nda):
     print("type\t: ", nda.dtype, "\nshape\t: ", nda.shape, "\nmin\t: ", nda.min(), "\nmax\t: ", nda.max(), "\n")
 
 
-def parse_opt():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--poseweights', nargs='+', type=str, default='yolov7-w6-pose.pt', help='model path(s)')
-    parser.add_argument('--source', type=str, default='football1.mp4', help='video/0 for webcam')  # video source
-    parser.add_argument('--device', type=str, default='0', help='cpu/0,1,2,3(gpu)')  # device arugments
-    parser.add_argument('--view-img', action='store_true', help='display results')  # display results
-    parser.add_argument('--save-conf', action='store_true',
-                        help='save confidences in --save-txt labels')  # save confidence in txt writing
-    parser.add_argument('--line-thickness', default=3, type=int,
-                        help='bounding box thickness (pixels)')  # box linethickness
-    parser.add_argument('--hide-labels', default=False, action='store_true', help='hide labels')  # box hidelabel
-    parser.add_argument('--hide-conf', default=False, action='store_true', help='hide confidences')  # boxhideconf
-    opt = parser.parse_args()
-    return opt
+
 
 
 class Main:
@@ -118,36 +105,49 @@ class Main:
         ################# Get options ###############
         self.opt = opt_arg
         print(f"opt.source: {self.opt.source:s}")
-        source = int(self.opt.source)  # 0 : Test with PC webcam / !=0 : Use url cameras
 
         ############### Get LAN Infos ###############
         _, self.lan_ssid = get_current_lan_ssid()
 
         ##############  Init cameras video stream ###############
         self.cameras = []
-        if source != 0:
-            # Get Cams Urls
-            IPCAMS_DATABASE_PATH = root_project_dir + IPCAMS_DATABASE
-            IPCAMS_DATABASE_PATH = IPCAMS_DATABASE_PATH.replace("\"", "\\")  # Convert to double backslashes if needed
-            wb = openpyxl.load_workbook(IPCAMS_DATABASE_PATH, data_only=True)
-            bat_names = wb.sheetnames
-            ws = wb[bat_names[BAT_ID]]
-            self.urls = [ws.cell(row=i + IPCAMS_DATABASE_STARTROW, column=IPCAMS_DATABASE_STARTCOL).value for i in
-                         range(1, ws.max_row + 1) if
-                         ws.cell(row=i + IPCAMS_DATABASE_STARTROW, column=IPCAMS_DATABASE_STARTCOL).value is not None]
-            # self.urls = self.urls[:1]
-            print(self.urls)
-            n = len(self.urls)
-            rot_angles = [90 * 0 for i in range(n)]  # TODO rm 0
-            rot_angles[3] = 0
 
-            for i, url in enumerate(self.urls):
-                camera = GenericCamera(url, rot_angle=rot_angles[i], source_is_auto_refresh=(IPCAMS_DATABASE_STARTCOL == 4))
+        if is_number(self.opt.source):
+            source = int(self.opt.source)  # 0 : Test with PC webcam / !=0 : Use url cameras
+            if source == 1:
+                # Get Cams Urls
+                IPCAMS_DATABASE_PATH = root_project_dir + IPCAMS_DATABASE
+                IPCAMS_DATABASE_PATH = IPCAMS_DATABASE_PATH.replace("\"",
+                                                                    "\\")  # Convert to double backslashes if needed
+                wb = openpyxl.load_workbook(IPCAMS_DATABASE_PATH, data_only=True)
+                bat_names = wb.sheetnames
+                ws = wb[bat_names[BAT_ID]]
+                self.urls = [ws.cell(row=i + IPCAMS_DATABASE_STARTROW, column=IPCAMS_DATABASE_STARTCOL).value for i in
+                             range(1, ws.max_row + 1) if
+                             ws.cell(row=i + IPCAMS_DATABASE_STARTROW,
+                                     column=IPCAMS_DATABASE_STARTCOL).value is not None]
+                # self.urls = self.urls[:1]
+                print(self.urls)
+                n = len(self.urls)
+                rot_angles = [90 * 0 for i in range(n)]  # TODO rm 0
+                rot_angles[3] = 0
+
+                for i, url in enumerate(self.urls):
+                    camera = GenericCamera(url, rot_angle=rot_angles[i],
+                                           source_is_auto_refresh=(IPCAMS_DATABASE_STARTCOL == 4))
+                    camera.start()
+                    self.cameras.append(camera)
+
+            if source == 0:
+                camera = GenericCamera(0, rot_angle=0)
+                camera.source_is_auto_refresh = True
                 camera.start()
                 self.cameras.append(camera)
 
-        else:
-            camera = GenericCamera(0, rot_angle=0)
+        else:  # Video file
+            camera = GenericCamera(self.opt.source, rot_angle=0)
+            camera.frame_time = 0.03
+            camera.source_is_auto_refresh = True
             camera.start()
             self.cameras.append(camera)
 
@@ -159,42 +159,103 @@ class Main:
         ###########################################################
 
         ################## Init pose classifier ###################
+        # Deprecated TODO rm
         self.pose_classifier = SymbolicPoseClassifier()
+        self.humanExtractor = HumanExtractor(10, 852 - 10, 10, 480 - 10)
+
+        global start_time
+        start_time = time.time()
         ###########################################################
 
         ################# Init output server ######################
-        #TODO Fix problem here with output server init
-        #self.out_stream = FrameStream()
+        # TODO Fix problem here with output server init
+        # self.out_stream = FrameStream()
         ###########################################################
 
-
     def update(self):
+        global all_kpts
         j = 0
         n = len(self.cameras)
         output = [None for i in range(n)]
+
         for i, cam in enumerate(self.cameras):
             success, frame = cam.read()
-
             # Detection
             enable_detection = 1
             success = 1
             enable_pose_drawing = 1
+            activity_classifier = 1
             if success:
                 if enable_detection:
                     if i == j:
-                        yol_frame, results, _, _ = self.pose_estimator.detect(frame)
-                        if enable_pose_drawing:
-                            frame = draw_poses(frame, results, self.names, line_thickness=self.opt.line_thickness,
-                                               hide_conf=self.opt.hide_conf, hide_labels=self.opt.hide_labels)
+                        yol_frame, poses_results, _, _ = self.pose_estimator.detect(frame)
+                        print("Current Frame shape : ", frame.shape)
 
-                        # Pose classifier
-                        # self.pose_classifier.symbolic_classify(results, 10)
+                        if activity_classifier == 0:
+                            dist, correl = self.pose_classifier.symbolic_classify(poses_results)
+                            if enable_pose_drawing:
+                                frame = draw_poses(frame, poses_results, self.names,
+                                                   line_thickness=self.opt.line_thickness,
+                                                   hide_conf=self.opt.hide_conf, hide_labels=self.opt.hide_labels)
+
+                        if activity_classifier == 1:
+
+                            for i, pose in enumerate(poses_results):
+
+                                if len(poses_results):  # check if no pose
+                                    for c in pose[:, 5].unique():  # Print poses_results
+                                        n = (pose[:, 5] == c).sum()  # detections per class
+                                        #print("No of Objects in Current Frame : {}".format(n))
+
+                                        all_kpts = pose[:, 6:]
+
+                                        for det_index, (*xyxy, conf, cls) in enumerate(
+                                                reversed(pose[:, :6])):  # loop over poses for drawing on frame
+                                            c = int(cls)  # integer class
+                                            kpts = pose[det_index, 6:]
+
+                                        # Pose classifier (Deprecated) TODO rm
+                                        # current_time = time.time() - start_time
+                                        # print(current_time)
+                                        # print("Corrélation : " + str(correl.cpu().item()))
+
+                                        # Human extractor
+                                        self.humanExtractor.update_humans(all_kpts, yol_frame)
+                                        humans = self.humanExtractor.humans
+
+                                        current_time = time.time() - start_time
+
+                                        if len(humans) > 1:
+                                            correl_score = correlation(humans[0].get_pose(), humans[1].get_pose())
+                                        print(current_time)
+                                            #print("Correl between 1 and 3 :", correl_score.item())
+                                            #print("Pose 1 :", humans[0].get_pose())
+                                            #print("Pose 2 :", humans[1].get_pose())
+                                            #print("Screen dims", frame.shape)
+
+                                        for h, human in enumerate(humans):
+                                            #print("humains sur scene : ", len(humans))
+                                            human_kpts_xy = human.get_pose().reshape(-1, 3)[:, :-1]
+                                            xyxy = [min(human_kpts_xy[:, 0]), min(human_kpts_xy[:, 1]), max(human_kpts_xy[:, 0]), max(human_kpts_xy[:, 1])]
+                                            plot_human(human, frame, infos=True, state_text=("Normal" if h == 1 else "Malaise"), label=" humain:" + str(h + 1), color=colors(h, True),
+                                                             line_thickness=6, kpt_label=True, steps=3,
+                                                             orig_shape=frame.shape[:2])
+                    output[i] = frame
+                    frame = None
+
+                    # print("Corrélation : " + str(correl.cpu().item()))
+
+                    # try:
+                    #     # Write data to a text file
+                    #     if correl.cpu().item() > 0:
+                    #         with open('correl.txt', 'a') as f:
+                    #             f.write(f'{current_time:.2f} {correl.cpu().item()}\n')
+                    # except Exception as e:
+                    #     print('Error : %s', e)
 
             # Send the stream video
-           # send_to_stream(frame, self.out_stream)
+            # send_to_stream(frame, self.out_stream)
 
-            output[i] = frame
-            frame = None
         j += 1
         j %= len(self.cameras)
         return output
@@ -202,3 +263,11 @@ class Main:
     def close_cameras(self):
         for i, cam in enumerate(self.cameras):
             cam.stop()
+
+
+def is_number(s):
+    try:
+        float(s)
+        return True
+    except ValueError:
+        return False

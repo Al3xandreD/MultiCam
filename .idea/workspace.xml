@@ -217,7 +217,7 @@
       <recent name="C:\Users\rayou\Documents\ENSTA Bretagne\MultiCam\MultiCam_Git\2_PC Server (Image Processing)\Application PC\poseestimation" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.python hpc/run/run.py -v video -w write_name -c -p -g -d">
     <configuration name="python hpc/run/run.py -v video -w write_name -c -p -g -d" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MultiCam_Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
