@@ -70,14 +70,12 @@ def knnCorrespondance(img_left,img_right):
 
     good_matches = sorted(good_matches, key=lambda x: x.distance)
     # Dessiner les correspondances sur une nouvelle image
-    img_matches = cv2.drawMatches(img_left, keypoints_left, img_right, keypoints_right, good_matches[:100], None)
+    img_matches = cv2.drawMatches(img_left, keypoints_left, img_right, keypoints_right, good_matches, None)
 
     # Afficher l'image avec les correspondances
     cv2.imshow('Matches', img_matches)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
-    print(good_matches[:10])
-    print(keypoints_left)
 
 def flannMatching(img_left,img_right):
     sift = cv2.SIFT_create()
