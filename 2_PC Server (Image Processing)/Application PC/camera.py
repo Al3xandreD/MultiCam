@@ -86,6 +86,7 @@ class GenericCamera:
         resized_frame = gcd_resize(rotated_frame, 64)
         return resized_frame
 
+    # TODO rm url from here and place it to init
     def update(self, url):
         # Read next stream frame in a daemon thread
         f = 0
