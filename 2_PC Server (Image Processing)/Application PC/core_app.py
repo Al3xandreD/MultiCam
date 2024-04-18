@@ -138,7 +138,7 @@ class Main:
                 rot_angles[3] = 0
 
                 for i, url in enumerate(self.urls):
-                    camera=Camera(url, rot_angles[i],(IPCAMS_DATABASE_STARTCOL == 4) )
+                    camera=Camera(url, rot_angles[i],(IPCAMS_DATABASE_STARTCOL == 4))
                     self.cameras.append(camera)
 
                 for k in range(0,len(self.cameras),2):

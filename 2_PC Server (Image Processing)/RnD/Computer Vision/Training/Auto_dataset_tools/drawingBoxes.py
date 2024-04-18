@@ -1,6 +1,6 @@
 import os
 import subprocess
-import tensorflow as tf
+
 
 def move2directory(pathYolo):
     '''
@@ -46,8 +46,8 @@ def training(pathTrain, pathData_train, pathWeights, epochs):
     :return:
     '''
     # TODO ajouter la version mps pour supporter apple silicon
-    command="python "+"'"+pathTrain+"'" +" --workers 8 --device mps --epochs " + epochs + " --data " + "'"+pathData_train+"'"+" --img 640 --weights "+"'"+pathWeights+"'"+""
-    command2="python "+"'"+pathTrain+"'"+" --workers 8 --img 640 --epochs "+ epochs +" --data "+"'"+pathData_train+"'"+" --weights "+ "'"+pathWeights+"'"
+    command="python "+"'"+pathTrain+"'" +" --workers 8 --device mps --epochs " + str(epochs) + " --data " + "'"+pathData_train+"'"+" --img 640 --weights "+"'"+pathWeights+"'"+""
+    command2="python "+"'"+pathTrain+"'"+" --workers 8 --img 640 --epochs "+ str(epochs) +" --data "+"'"+pathData_train+"'"+" --weights "+ "'"+pathWeights+"'"
     resultTrain = subprocess.run(command, shell=True)
 
     print(resultTrain.stdout)
@@ -66,8 +66,8 @@ def execResult(pathWeight):
 
 if __name__=='__main__':
 
-    label_data=True
-    re_training=False
+    label_data=False
+    re_training=True
     exec_result=False
 
     # path for detection and draw boxes
@@ -77,7 +77,7 @@ if __name__=='__main__':
 
     # path for training
     pathData_train = "MultiCamTraining/data.yaml"
-    pathTrain = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/Saves/yolov7/train.py"
+    pathTrain = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/STIC/MultiCam/2_PC Server (Image Processing)/RnD/Computer Vision/Training/Auto_dataset_tools/train.py"
 
     # path for applying retrained model
     pathBest="resultWeights/best.pt"
@@ -93,7 +93,7 @@ if __name__=='__main__':
 
     if re_training:
         move2directory(pathYolo)
-        training(pathTrain, pathData_train, pathWeights)
+        training(pathTrain, pathData_train, pathWeights, 300)
 
     if exec_result:
         move2directory(pathYolo)
