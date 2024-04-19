@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\Users\\ththy\\.gradle\\daemon\\8.0\\com.example.final_app-mergeDebugResources-30:\\layout\\activity_splashscreen.xml",
+        "source": "C:\\Users\\ththy\\.gradle\\daemon\\8.0\\com.example.final_app-main-33:\\layout\\activity_splashscreen.xml"
+    },
+    {
+        "merged": "C:\\Users\\ththy\\.gradle\\daemon\\8.0\\com.example.final_app-mergeDebugResources-30:\\layout\\layout_list_etage.xml",
+        "source": "C:\\Users\\ththy\\.gradle\\daemon\\8.0\\com.example.final_app-main-33:\\layout\\layout_list_etage.xml"
+    },
+    {
+        "merged": "C:\\Users\\ththy\\.gradle\\daemon\\8.0\\com.example.final_app-mergeDebugResources-30:\\layout\\activity_camera.xml",
+        "source": "C:\\Users\\ththy\\.gradle\\daemon\\8.0\\com.example.final_app-main-33:\\layout\\activity_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\ththy\\.gradle\\daemon\\8.0\\com.example.final_app-mergeDebugResources-30:\\layout\\activity_fullscreen.xml",
+        "source": "C:\\Users\\ththy\\.gradle\\daemon\\8.0\\com.example.final_app-main-33:\\layout\\activity_fullscreen.xml"
+    },
+    {
+        "merged": "C:\\Users\\ththy\\.gradle\\daemon\\8.0\\com.example.final_app-mergeDebugResources-30:\\layout\\activity_map.xml",
+        "source": "C:\\Users\\ththy\\.gradle\\daemon\\8.0\\com.example.final_app-main-33:\\layout\\activity_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\ththy\\.gradle\\daemon\\8.0\\com.example.final_app-mergeDebugResources-30:\\layout\\layout_list_batiment.xml",
+        "source": "C:\\Users\\ththy\\.gradle\\daemon\\8.0\\com.example.final_app-main-33:\\layout\\layout_list_batiment.xml"
+    },
+    {
+        "merged": "com.example.final_app-mergeDebugResources-30:/layout/activity_2.xml",
+        "source": "com.example.final_app-main-33:/layout/activity_2.xml"
+    },
+    {
+        "merged": "C:\\Users\\ththy\\.gradle\\daemon\\8.0\\com.example.final_app-mergeDebugResources-30:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\ththy\\.gradle\\daemon\\8.0\\com.example.final_app-main-33:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ththy\\.gradle\\daemon\\8.0\\com.example.final_app-mergeDebugResources-30:\\layout\\activity_2.xml",
+        "source": "C:\\Users\\ththy\\.gradle\\daemon\\8.0\\com.example.final_app-main-33:\\layout\\activity_2.xml"
+    },
+    {
+        "merged": "C:\\Users\\ththy\\.gradle\\daemon\\8.0\\com.example.final_app-mergeDebugResources-30:\\layout\\activity_main5.xml",
+        "source": "C:\\Users\\ththy\\.gradle\\daemon\\8.0\\com.example.final_app-main-33:\\layout\\activity_main5.xml"
+    }
+]

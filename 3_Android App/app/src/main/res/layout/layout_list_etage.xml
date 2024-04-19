@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/liste_etage"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="etage"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:focusable="true"
+        />
+
+    <TextView
+        android:id="@+id/liste_camera"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="camera"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/liste_etage"
+        android:focusable="true"
+        />
+
+    <TextView
+        android:id="@+id/liste_victime"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="victimes"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/liste_camera"
+        android:focusable="true"
+        />
+
+    <ImageView
+        android:id="@+id/logoImageCarte"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo_carte"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_toEndOf="@+id/liste_victime"
+        android:layout_marginStart="10dp"
+        android:contentDescription="logo_carte"
+        />
+
+    <ImageView
+        android:id="@+id/logoImageCamera"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo_camera"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_toEndOf="@+id/logoImageCarte"
+        android:layout_marginStart="10dp"
+        android:contentDescription="logo_camera"/>
+
+</RelativeLayout>
