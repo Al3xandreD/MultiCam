@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="blanc_transparent_background_texte">#33FFFFFF</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="rouge_alarme">#FF0000</color>
+    <color name="vert_bon">#FF99cc00</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Final_App</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="nom_encadrants">Encadrants : A. Toumi, J.C. Cexus</string>
+    <string name="nom_projet">Projet Système Multicam UE 3.4 et 4.4</string>
+    <string name="numero_version">Version : 0.1</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <style name="Base.Theme.Final_App" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.Final_App" parent="Base.Theme.Final_App"/>
+    <style name="Theme.Final_App.Fullscreen" parent="Theme.Final_App">
+        <item name="android:actionBarStyle">@style/Widget.Theme.Final_App.ActionBar.Fullscreen
+        </item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+    <style name="ThemeOverlay.Final_App.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
+    <style name="Widget.Theme.Final_App.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+    <style name="Widget.Theme.Final_App.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+    <declare-styleable name="FullscreenAttrs">
+        <attr format="color" name="fullscreenBackgroundColor"/>
+        <attr format="color" name="fullscreenTextColor"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+<!--        <com.google.android.material.imageview.ShapeableImageView-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:id="@+id/list_Image"-->
+<!--            android:src="@drawable/sample_image_batiment"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_marginTop="10dp"/>-->
+
+        <TextView
+            android:layout_width="400dp"
+            android:layout_height="80dp"
+            android:id="@+id/liste_batiment"
+            android:text="Name"
+            android:textSize="40sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"/>
+<!--            android:layout_toEndOf="@id/list_Image"-->
+
+
+        <View
+            android:id="@+id/Couleur_batiment"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/round_shape"
+            android:layout_toRightOf="@id/liste_batiment"
+            android:layout_marginTop="20dp"/>
+             />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
