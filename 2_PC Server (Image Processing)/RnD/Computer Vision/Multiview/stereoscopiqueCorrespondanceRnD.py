@@ -128,6 +128,9 @@ def findDescripteur(human_pose, good_matches, keypoints_left, keypoints_right, f
     norm_up_left=np.sqrt((up_left_point[0]-point_left[0])**2 + (up_left_point[1]-point_left[1])**2)  # distance between up left point and first descriptor
     norm_down_right=np.sqrt((down_right_point[0] - point_left[0]) ** 2 + (down_right_point[1] - point_left[1]) ** 2)
 
+    nn_up_left_train=keypoints_right[good_matches[0].trainIdx].pt
+    nn_down_right_train=keypoints_right[good_matches[0].trainIdx].pt
+
     # searching for closest descriptor to up left point
     for match in good_matches[1:]:
         point_left = keypoints_left[match.queryIdx].pt  # coordinates pixels
@@ -146,7 +149,7 @@ def findDescripteur(human_pose, good_matches, keypoints_left, keypoints_right, f
 
     return nn_up_left_train, nn_down_right_train
 
-def findHuman(humanLeft, list_human_right, good_matches, keypoints_left, keypoints_right):
+def findHuman(left_pose, list_right_pose, good_matches, keypoints_left, keypoints_right):
     '''
     Finds the corresponding human in the right frame for a
     given human in the left frame
@@ -154,20 +157,21 @@ def findHuman(humanLeft, list_human_right, good_matches, keypoints_left, keypoin
     :return:
     '''
 
-    nn_up_left_train,nn_down_right_train=findDescripteur(humanLeft, good_matches, keypoints_left, keypoints_right)
-    best_norm=np.sqrt((list_human_right[0].center[0] - nn_up_left_train[0]) ** 2 + (list_human_right[0].center[1] - nn_up_left_train[1]) ** 2) + np.sqrt((list_human_right[0].center[0]-nn_down_right_train[0]) ** 2 + (list_human_right[0].center[1]-nn_down_right_train[0])**2)
+    nn_up_left_train,nn_down_right_train=findDescripteur(left_pose, good_matches, keypoints_left, keypoints_right)
+    best_norm=np.sqrt((list_right_pose[0].center[0] - nn_up_left_train[0]) ** 2 + (list_right_pose[0].center[1] - nn_up_left_train[1]) ** 2) + np.sqrt((list_right_pose[0].center[0]-nn_down_right_train[0]) ** 2 + (list_right_pose[0].center[1]-nn_down_right_train[0])**2)
+    best_pose_match=list_right_pose[0]
 
-    for human in list_human_right[1:]:
+    for pose in list_right_pose[1:]:
         # distance to up left point in right frame
-        norm_up_left_train = np.sqrt((human.center[0] - nn_up_left_train[0]) ** 2 + (human.center[1] - nn_up_left_train[1]) ** 2)
+        norm_up_left_train = np.sqrt((pose.center[0] - nn_up_left_train[0]) ** 2 + (pose.center[1] - nn_up_left_train[1]) ** 2)
         # distance to down right point in right frame
-        norm_down_right_train = np.sqrt((human.center[0]-nn_down_right_train[0]) ** 2 + (human.center[1]-nn_down_right_train[0])**2)
+        norm_down_right_train = np.sqrt((pose.center[0]-nn_down_right_train[0]) ** 2 + (pose.center[1]-nn_down_right_train[0])**2)
         total_norm=norm_up_left_train + norm_down_right_train
         if total_norm<best_norm:
             best_norm=total_norm
-            best_human_match=human  # human more likely to be in the research window associated to bbox points
+            best_pose_match=pose  # pose more likely to be in the research window associated to bbox points
 
-    return best_human_match
+    return best_pose_match
 
 
 if __name__=='__main__':

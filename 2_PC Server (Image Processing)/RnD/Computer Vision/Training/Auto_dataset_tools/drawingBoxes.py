@@ -66,14 +66,14 @@ def execResult(pathWeight):
 
 if __name__=='__main__':
 
-    label_data=False
-    re_training=True
+    label_data=True
+    re_training=False
     exec_result=False
 
     # path for detection and draw boxes
     pathYolo = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/Saves/yolov7"
     pathWeights = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/Saves/yolov7/yolov7.pt"    # standard weights
-    pathDatabase = "/Users/alexandredermouche/Documents/Alexandre /Cours/ENSTA/2A/STIC/MultiCam/2_PC Server (Image Processing)/Computer Vision RnD/Trains/archive"
+    pathDatabase = "/Users/alexandredermouche/Downloads/datas"
 
     # path for training
     pathData_train = "MultiCamTraining/data.yaml"
