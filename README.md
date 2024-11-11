@@ -1,13 +1,7 @@
 # MultiCam
 
-[Google](https://google.com)
-[Example PDF](PDFs/example.pdf)
-## Arborescence du Projet
-
 [PC Server Readme](2_PC%20Server%20%28Image%20Processing%29/README.md) pour plus de détails sur l'API du projet.
 
-
-## Arborescence du Projet
 ## Arborescence du Projet
 ```plaintext
 ├── #Common Resources
